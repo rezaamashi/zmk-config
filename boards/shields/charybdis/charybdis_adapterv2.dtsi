@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "tbkmini_common.dtsi"
+#include "charybdis_common.dtsi"
 
 / {
 	chosen {
