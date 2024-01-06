@@ -12,10 +12,18 @@
 
 &kscan0 {
 	col-gpios
+<<<<<<< HEAD
 		= <&pro_micro_d 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		, <&pro_micro_d 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		, <&pro_micro_d 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		, <&pro_micro_d  5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		, <&pro_micro_d  7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+=======
+		= <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col5
+		, <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col5
+		, <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col7
+		, <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col8
+		, <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // col9
+>>>>>>> b22075e (adding column name)
 		;
 };
