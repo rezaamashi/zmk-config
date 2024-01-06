@@ -7,11 +7,7 @@
 #include "charybdis.dtsi"
 
 &default_transform {
-	col-offset = <6>;
-};
-
-&skeletyl_transform {
-	col-offset = <6>;
+	col-offset = <5>;
 };
 
 &kscan0 {
@@ -21,6 +17,5 @@
 		, <&pro_micro_d 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		, <&pro_micro_d  5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		, <&pro_micro_d  7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-		, <&pro_micro_d  8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		;
 };
