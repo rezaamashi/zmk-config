@@ -161,6 +161,12 @@
       bindings = <&caps_word>, <&kp CAPS>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+    td0: tap_dance_0 {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&kp BSPC>, <&kp BSPC>, <&mcr_ctrl_bspc>;
+    };
   };
 
   keymap {
