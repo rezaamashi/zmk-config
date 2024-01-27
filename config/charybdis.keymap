@@ -108,7 +108,7 @@
     combo_ctrl_g {
         timeout-ms = <50>;
         key-positions = <26 27>; // H ,
-        layers = <0>;  // this is optional, but I like it to be enabled only on default layer
+        layers = <0>;
         bindings = <&mcr_ctrl_g>;
     };
     combo_del {
@@ -142,8 +142,8 @@
         bindings = <&bootloader>;
     };
     combo_bootloader_right {
-        timeout-ms = <5 6 7 8>; // J L U Y
-        key-positions = <>;
+        timeout-ms = <50>;
+        key-positions = <5 6 7 8>; // J L U Y
         layers = <0>;
         bindings = <&bootloader>;
     };
