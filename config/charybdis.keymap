@@ -46,6 +46,7 @@
             = <&macro_press &kp LCTRL>
             , <&macro_tap &kp G>
             , <&macro_release &kp LCTRL>
+            ;
         };
     // save file in vim/evil
     mcr_colon_w: mcr_colon_w {
@@ -56,6 +57,7 @@
             , <&macro_tap &kp COLON>
             , <&macro_tap &kp W>
             , <&macro_tap &kp RET>
+            ;
         };
     // kill word
     mcr_ctrl_bspc: mcr_ctrl_bspc {
@@ -65,6 +67,7 @@
             = <&macro_press &kp LCTRL>
             , <&macro_tap &kp BSPC>
             , <&macro_release &kp LCTRL>
+            ;
         };
     mcr_alt_tab: mcr_alt_tab {
         compatible = "zmk,behavior-macro";
@@ -73,16 +76,18 @@
             = <&macro_press &kp LALT>
             , <&macro_tap &kp TAB>
             , <&macro_release &kp LALT>
+            ;
         };
     mcr_alt_backtab: mcr_alt_backtab {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
         bindings
             = <&macro_press &kp LALT>
-            = <&macro_press &kp LSHFT>
+            , <&macro_press &kp LSHFT>
             , <&macro_tap &kp TAB>
-            = <&macro_release &kp LSHFT>
+            , <&macro_release &kp LSHFT>
             , <&macro_release &kp LALT>
+            ;
         };
   };
 
