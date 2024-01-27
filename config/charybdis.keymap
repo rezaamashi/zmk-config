@@ -86,6 +86,64 @@
         };
   };
 
+  combos {
+    compatible = "zmk,combos";
+    combo_colon_w {
+        timeout-ms = <50>;
+        key-positions = <1 2>; // W F
+        layers = <0>;  // this is optional, but I like it to be enabled only on default layer
+        bindings = <&mcr_colon_w>;
+    };
+    combo_esc {
+        timeout-ms = <50>;
+        key-positions = <16 17>; // N E
+        layers = <0>;  // this is optional, but I like it to be enabled only on default layer
+        bindings = <&kp ESC>;
+    };
+    combo_ctrl_g {
+        timeout-ms = <50>;
+        key-positions = <26 27>; // H ,
+        layers = <0>;  // this is optional, but I like it to be enabled only on default layer
+        bindings = <&mcr_ctrl_g>;
+    };
+    combo_del {
+        timeout-ms = <50>;
+        key-positions = <33 34>; // RET SPACE
+        layers = <0>;
+        bindings = <&kp DEL>;
+    };
+    combo_repeat {
+        timeout-ms = <50>;
+        key-positions = <28 29>; // . /
+        layers = <0>;
+        bindings = <&key_repeat>;
+    };
+    combo_sys_reset_left {
+        timeout-ms = <50>;
+        key-positions = <11 12 13 14>; // R S T G
+        layers = <0>;
+        bindings = <&sys_reset>;
+    };
+    combo_sys_reset_right {
+        timeout-ms = <50>;
+        key-positions = <15 16 17 18>; // M N E I
+        layers = <0>;
+        bindings = <&sys_reset>;
+    };
+    combo_bootloader_left {
+        timeout-ms = <50>;
+        key-positions = <1 2 3 4>; // W F P B
+        layers = <0>;
+        bindings = <&bootloader>;
+    };
+    combo_bootloader_right {
+        timeout-ms = <5 6 7 8>; // J L U Y
+        key-positions = <>;
+        layers = <0>;
+        bindings = <&bootloader>;
+    };
+  };
+
   behaviors {
     hm: homerow_mods {
       compatible = "zmk,behavior-hold-tap";
