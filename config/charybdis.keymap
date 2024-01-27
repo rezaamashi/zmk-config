@@ -25,6 +25,18 @@
     zmk,matrix_transform = &default_transform;
   };
 
+  conditional_layers {
+    compatible = "zmk,conditional-layers";
+        sym_layer {
+            if-layers = <NAV NUM>;
+            then-layer = <FUN>;
+        };
+        mse_layer {
+            if-layers = <MED SYM>;
+            then-layer = <MSE>;
+        };
+  };
+
   behaviors {
     hm: homerow_mods {
       compatible = "zmk,behavior-hold-tap";
