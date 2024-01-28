@@ -123,30 +123,6 @@
         layers = <0>;
         bindings = <&key_repeat>;
     };
-    combo_sys_reset_left {
-        timeout-ms = <50>;
-        key-positions = <11 12 13 14>; // R S T G
-        layers = <0>;
-        bindings = <&sys_reset>;
-    };
-    combo_sys_reset_right {
-        timeout-ms = <50>;
-        key-positions = <15 16 17 18>; // M N E I
-        layers = <0>;
-        bindings = <&sys_reset>;
-    };
-    combo_bootloader_left {
-        timeout-ms = <50>;
-        key-positions = <1 2 3 4>; // W F P B
-        layers = <0>;
-        bindings = <&bootloader>;
-    };
-    combo_bootloader_right {
-        timeout-ms = <50>;
-        key-positions = <5 6 7 8>; // J L U Y
-        layers = <0>;
-        bindings = <&bootloader>;
-    };
   };
 
   behaviors {
