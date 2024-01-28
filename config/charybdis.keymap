@@ -5,10 +5,10 @@
 #define DEFAULT 0
 #define NUM 1
 #define SYM 2
-#define FUN 3
-#define NAV 4
-#define MSE 5
-#define MED 6
+#define NAV 3
+#define MED 4
+#define FUN 5
+#define MSE 6
 
 &lt {
   tapping-term-ms = <300>;
@@ -188,7 +188,7 @@
         };
         num_layer {
             bindings = <
-	&kp RBKT    &kp N7       &kp N8         &kp N9         &kp LBKT          &kp K_LOCK   &trans       &trans       &trans       &sys_reset
+	&kp RBKT    &kp N7       &kp N8         &kp N9         &kp LBKT          &kp K_LOCK   &trans       &trans       &trans       &trans
 	&kp SEMI    &kp N4       &kp N5         &kp N6         &kp EQUAL         &trans       &kp RSHFT    &kp RCTRL    &kp RALT     &kp RGUI
 	&kp GRAVE   &kp N1       &kp N2         &kp N3         &kp BSLH          &trans       &trans       &trans       &trans       &trans
 	                         &trans         &kp N0         &kp MINUS         &kp DOT      &trans
@@ -196,18 +196,10 @@
         };
         sym_layer {
             bindings = <
-	&kp RBRC    &kp AMPS     &kp STAR       &kp LPAR       &kp LBRC          &kp K_LOCK   &trans       &trans      &trans        &sys_reset
+	&kp RBRC    &kp AMPS     &kp STAR       &kp LPAR       &kp LBRC          &kp K_LOCK   &trans       &trans      &trans        &trans
 	&kp COLON   &kp DLLR     &kp PRCNT      &kp CARET      &kp PLUS          &trans       &kp RSHFT    &kp RCTRL   &kp LALT      &kp RGUI
 	&kp TILDE   &kp EXCL     &kp AT         &kp HASH       &kp PIPE          &trans       &trans       &trans      &trans        &trans
 	                         &trans         &kp LPAR       &kp UNDER         &trans       &kp RPAR
-            >;
-        };
-        fun_layer {
-            bindings = <
-	&kp K_LOCK  &trans       &trans         &trans         &trans            &kp F12      &kp F7       &kp F8         &kp F9         &kp SYSREQ
-	&bootloader &kp RSHFT    &kp RCTRL      &kp LALT       &kp RGUI          &kp F11      &kp F4       &kp F5         &kp F6         &kp PRINTSCREEN
-	&trans      &trans       &trans         &trans         &trans            &kp F10      &kp F1       &kp F2         &kp F3         &kp PAUSE_BREAK
-	                         &trans         &kp SPACE      &kp TAB           &kp K_APP    &trans
             >;
         };
         nav_layer {
@@ -218,20 +210,28 @@
                              &trans         &kp BSPC       &kp RET           &trans       &trans
             >;
         };
-        mse_layer {
-            bindings = <
-	&trans      &trans       &trans          &trans        &kp K_LOCK        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-	&kp LGUI    &kp LALT     &kp LCTRL       &kp LSHFT     &trans            &trans       &trans       &trans       &trans       &bootloader
-	&trans      &trans       &trans          &trans        &trans            &trans       &trans       &trans       &trans       &bt BT_CLR
-	                         &trans          &trans        &trans            &trans       &trans
-            >;
-        };
         med_layer {
             bindings = <
-	&trans      &trans      &trans           &trans        &kp K_LOCK        &trans       &trans       &trans       &trans       &trans
+	&bootloader &sys_reset  &trans           &trans        &kp K_LOCK        &trans       &trans       &trans       &sys_reset   &bootloader
 	&kp LGUI    &kp LALT    &kp LCTRL        &kp LSHFT     &trans            &trans       &kp K_PREV   &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT
-	&trans      &trans      &trans           &trans        &trans            &trans       &kp C_PIP    &kp C_BRI_DN &kp C_BRI_UP &sys_reset
+	&trans      &trans      &trans           &trans        &trans            &trans       &kp C_PIP    &kp C_BRI_DN &kp C_BRI_UP &trans
 	                        &trans           &kp K_PP      &kp K_MUTE        &trans       &kp K_STOP2
+            >;
+        };
+        fun_layer {
+            bindings = <
+	&kp K_LOCK  &trans       &trans         &trans         &trans            &kp F12      &kp F7       &kp F8         &kp F9     &kp SYSREQ
+	&trans      &kp RSHFT    &kp RCTRL      &kp LALT       &kp RGUI          &kp F11      &kp F4       &kp F5         &kp F6     &kp PRINTSCREEN
+	&trans      &trans       &trans         &trans         &trans            &kp F10      &kp F1       &kp F2         &kp F3     &kp PAUSE_BREAK
+	                         &trans         &kp SPACE      &kp TAB           &kp K_APP    &trans
+            >;
+        };
+        mse_layer {
+            bindings = <
+	&bootloader &sys_reset   &trans          &trans        &kp K_LOCK        &trans       &trans       &trans       &sys_reset   &bootloader
+	&kp LGUI    &kp LALT     &kp LCTRL       &kp LSHFT     &trans            &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+	&trans      &trans       &trans          &trans        &trans            &trans       &trans       &trans       &trans       &bt BT_CLR
+	                         &trans          &trans        &trans            &trans       &trans
             >;
         };
     };
