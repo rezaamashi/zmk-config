@@ -28,12 +28,12 @@
   conditional_layers {
     compatible = "zmk,conditional-layers";
         sym_layer {
-            if-layers = <NAV NUM>;
-            then-layer = <FUN>;
+            if-layers = <3 1>; // NAV NUM
+            then-layer = <5>; // FUN
         };
         mse_layer {
-            if-layers = <MED SYM>;
-            then-layer = <MSE>;
+            if-layers = <4 2>; // MED SYM
+            then-layer = <6>; // MSE
         };
   };
 
