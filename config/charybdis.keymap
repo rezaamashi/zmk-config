@@ -194,16 +194,15 @@
 	&trans           &trans      &trans         &trans         &kp K_LOCK        &kp K_UNDO   &kp K_CUT    &kp K_COPY  &kp K_PASTE   &kp K_REDO
 	&kp LGUI         &kp LALT    &kp LCTRL      &kp LSHFT      &trans            &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT     &u_caps_word
 	&sys_reset       &trans      &trans         &trans         &trans            &kp HOME     &kp PG_DN    &kp PG_UP   &kp END       &kp INS
-                                 &trans         &kp BSPC       &kp RET           &trans       &trans
+                                 &trans         &trans         &trans            &kp RET      &kp SPACE
             >;
         };
         med_layer {
             bindings = <
 	&bootloader     &sys_reset  &trans           &trans        &kp K_LOCK        &trans       &trans       &trans       &sys_reset   &bootloader
-	                            &trans           &kp K_PP      &kp K_MUTE        &trans       &kp K_STOP2
-	&trans          &trans      &trans           &trans        &kp K_LOCK        &trans       &trans       &trans       &trans       &trans
 	&kp LGUI        &kp LALT    &kp LCTRL        &kp LSHFT     &trans            &kp K_PREV   &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT   &trans
 	&trans          &trans      &trans           &trans        &trans            &kp C_PIP    &kp C_BRI_DN &kp C_BRI_UP &trans       &trans
+	                            &trans           &kp K_PP      &trans            &kp K_MUTE   &kp K_STOP2
             >;
         };
         fun_layer {
@@ -211,7 +210,7 @@
 	&kp K_LOCK      &trans       &trans         &trans         &trans            &kp F12      &kp F7       &kp F8         &kp F9     &kp SYSREQ
 	&trans          &kp RSHFT    &kp RCTRL      &kp LALT       &kp RGUI          &kp F11      &kp F4       &kp F5         &kp F6     &kp PRINTSCREEN
 	&trans          &trans       &trans         &trans         &trans            &kp F10      &kp F1       &kp F2         &kp F3     &kp PAUSE_BREAK
-	                             &trans         &kp SPACE      &kp TAB           &kp K_APP    &trans
+	                             &trans         &trans         &kp TAB           &kp K_APP    &trans
             >;
         };
         mse_layer {
