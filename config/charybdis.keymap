@@ -101,12 +101,12 @@
     };
     combo_esc {
         timeout-ms = <50>;
-        key-positions = <26 27>; // H ,
+        key-positions = <16 17>; // N E
         bindings = <&kp ESC>;
     };
     combo_ctrl_g {
         timeout-ms = <50>;
-        key-positions = <25 26>; // K H
+        key-positions = <26 27>; // H ,
         layers = <0>;
         bindings = <&mcr_ctrl_g>;
     };
