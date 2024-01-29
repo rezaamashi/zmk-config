@@ -27,13 +27,13 @@
 
   conditional_layers {
     compatible = "zmk,conditional-layers";
-        sym_layer {
-            if-layers = <3 1>; // NAV NUM
-            then-layer = <5>; // FUN
-        };
         mse_layer {
             if-layers = <4 2>; // MED SYM
             then-layer = <6>; // MSE
+        };
+        fun_layer {
+            if-layers = <3 1>; // NAV NUM
+            then-layer = <5>; // FUN
         };
   };
 
@@ -159,6 +159,10 @@
 	&hm LGUI A      &hm LALT R   &hm LCTRL S    &hm LSHFT T    &kp G             &kp M        &hm RSHFT N  &hm RCTRL E  &hm RALT I   &hm RGUI O
 	&kp Z           &kp X        &kp C          &kp D          &kp V             &kp K        &kp H        &kp COMMA    &kp DOT      &kp FSLH
 	                             &trans         &lt NAV BSPC   &lt MED TAB       &lt SYM RET  &lt NUM SPACE
+//                                                   |             |-------(MSE)-------|             |
+//                                                   |---------------------(FUN)---------------------|
+//                                                                 |------ (nul)---------------------|
+//                                                   |---------------------(nul)-------|
             >;
         };
         num_layer {
