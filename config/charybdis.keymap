@@ -118,7 +118,7 @@
     };
     combo_repeat {
         timeout-ms = <50>;
-        key-positions = <28 29>; // . /
+        key-positions = <31 32>; // BSPC TAB
         layers = <0>;
         bindings = <&key_repeat>;
     };
