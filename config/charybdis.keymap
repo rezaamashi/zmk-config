@@ -163,17 +163,29 @@
         };
         num_layer {
             bindings = <
+// -----------------------------------------------------------------------------------------
+// | ] | -:- | -:- | -:- |    [    ||      || -:- |     |     |     |     |     |     |
+// | ; | -:- | -:- | -:- |    =    ||      ||     | -:- | -:- | -:- | -:- | -:- | -:- |
+// | ` | -:- | -:- | -:- | \ (nUS) ||      ||     |     |     |     |     |     |     |
+//                 | -:- |    -    ||      ||  .  |     |     |
+// -----------------------------------------------------------------------------------------
 	&kp RBKT        &kp N7       &kp N8         &kp N9         &kp LBKT          &kp K_LOCK   &trans       &trans       &trans       &trans
 	&kp SEMI        &kp N4       &kp N5         &kp N6         &kp EQUAL         &trans       &kp RSHFT    &kp RCTRL    &kp RALT     &kp RGUI
-	&kp GRAVE       &kp N1       &kp N2         &kp N3         &kp BSLH          &trans       &trans       &trans       &trans       &trans
+	&kp GRAVE       &kp N1       &kp N2         &kp N3         &kp NUBS          &trans       &trans       &trans       &trans       &trans
 	                             &trans         &kp N0         &kp MINUS         &kp DOT      &trans
             >;
         };
         sym_layer {
             bindings = <
+// -----------------------------------------------------------------------------------------
+// | } |  &  |  *  |    (    |  }  ||      || -:- |     |     |     |     |     |     |
+// | : |  $  |  %  |    ^    |  +  ||      ||     | -:- | -:- | -:- | -:- | -:- | -:- |
+// | ~ |  !  |  @  |  # (nUS)|  |  ||      ||     |     |     |     |     |     |     |
+//                 |    (    |  _  ||      ||     |  )  |     |
+// -----------------------------------------------------------------------------------------
 	&kp RBRC        &kp AMPS     &kp STAR       &kp LPAR       &kp LBRC          &kp K_LOCK   &trans       &trans      &trans        &trans
 	&kp COLON       &kp DLLR     &kp PRCNT      &kp CARET      &kp PLUS          &trans       &kp RSHFT    &kp RCTRL   &kp LALT      &kp RGUI
-	&kp TILDE       &kp EXCL     &kp AT         &kp HASH       &kp PIPE          &trans       &trans       &trans      &trans        &trans
+	&kp TILDE2      &kp EXCL     &kp AT_SIGN    &kp NUHS       &kp PIPE2         &trans       &trans       &trans      &trans        &trans
 	                             &trans         &kp LPAR       &kp UNDER         &trans       &kp RPAR
             >;
         };
