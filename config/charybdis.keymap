@@ -27,13 +27,13 @@
 
   conditional_layers {
     compatible = "zmk,conditional-layers";
-        mse_layer {
-            if-layers = <4 2>; // MED SYM
-            then-layer = <6>; // MSE
-        };
         fun_layer {
             if-layers = <3 1>; // NAV NUM
             then-layer = <5>; // FUN
+        };
+        mse_layer {
+            if-layers = <4 2>; // MED SYM
+            then-layer = <6>; // MSE
         };
   };
 
