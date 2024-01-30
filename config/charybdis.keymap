@@ -182,15 +182,15 @@
         sym_layer {
             bindings = <
 // -----------------------------------------------------------------------------------------
-// | } |  &  |  *  |    (    |  }  ||      || -:- |     |     |     |     |     |     |
-// | : |  $  |  %  |    ^    |  +  ||      ||     | -:- | -:- | -:- | -:- | -:- | -:- |
-// | ~ |  !  |  @  |  # (nUS)|  |  ||      ||     |     |     |     |     |     |     |
-//                 |    (    |  _  ||      ||     |  )  |     |
+// | } |  &  |  *  |  (  |  }  ||      ||  -:-   |     |     |     |     |     |     |
+// | : |  $  |  %  |  ^  |  +  ||      ||        | -:- | -:- | -:- | -:- | -:- | -:- |
+// | ~ |  !  | "/@ | £/# |  |  ||      || # (nUS)|     |     |     |     |     |     |
+//                 |  )  |  _  ||      ||        |     |     |
 // -----------------------------------------------------------------------------------------
 	&kp RBRC        &kp AMPS     &kp STAR       &kp LPAR       &kp LBRC          &kp K_LOCK   &trans       &trans      &trans        &trans
 	&kp COLON       &kp DLLR     &kp PRCNT      &kp CARET      &kp PLUS          &trans       &kp RSHFT    &kp RCTRL   &kp LALT      &kp RGUI
-	&kp TILDE2      &kp EXCL     &kp AT_SIGN    &kp NUHS       &kp PIPE2         &trans       &trans       &trans      &trans        &trans
-	                             &none          &kp LPAR       &kp UNDER         &trans       &kp RPAR
+	&kp TILDE2      &kp EXCL     &kp AT_SIGN    &kp HASH       &kp PIPE2         &kp NUHS     &trans       &trans      &trans        &trans
+	                             &none          &kp RPAR       &kp UNDER         &trans       &trans
             >;
         };
         nav_layer {
