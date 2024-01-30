@@ -144,7 +144,6 @@
       bindings = <&kp SEMI>, <&kp SQT>;
     };
   };
-  };
 
   keymap {
         compatible = "zmk,keymap";
