@@ -203,7 +203,7 @@
         };
         med_layer {
             bindings = <
-	&bootloader     &sys_reset  &trans           &trans        &kp K_LOCK        &trans       &trans       &trans       &sys_reset   &bootloader
+	&bootloader     &sys_reset  &trans           &trans        &kp K_LOCK        &trans       &kp K_PP     &trans       &sys_reset   &bootloader
 	&kp LGUI        &kp LALT    &kp LCTRL        &kp LSHFT     &trans            &kp K_PREV   &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT   &trans
 	&trans          &trans      &trans           &trans        &trans            &kp C_PIP    &kp C_BRI_DN &kp C_BRI_UP &trans       &trans
 	                            &none            &trans        &trans            &kp K_MUTE   &kp K_STOP2
