@@ -135,7 +135,7 @@
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&lt NAV BSPC>, <&kp BSPC>, <&mcr_ctrl_bspc>;
+      bindings = <&lt NAV BSPC>, <&mcr_ctrl_bspc>;
     };
     td_semi: tap_dance_semi {
       compatible = "zmk,behavior-tap-dance";
