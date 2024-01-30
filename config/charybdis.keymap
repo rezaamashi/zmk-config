@@ -38,14 +38,6 @@
   };
 
   macros {
-    // kill process in emacs
-    mcr_ctrl_g: mcr_ctrl_g {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings
-            = <&macro_tap &kp LC(G)>
-            ;
-        };
     // save file in vim/evil
     mcr_colon_w: mcr_colon_w {
         compatible = "zmk,behavior-macro";
@@ -55,14 +47,6 @@
             , <&macro_tap &kp COLON>
             , <&macro_tap &kp W>
             , <&macro_tap &kp RET>
-            ;
-        };
-    // kill word
-    mcr_ctrl_bspc: mcr_ctrl_bspc {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings
-            = <&macro_tap &kp LC(BSPC)>
             ;
         };
     mcr_alt_tab: mcr_alt_tab {
@@ -94,11 +78,12 @@
         key-positions = <16 17>; // N E
         bindings = <&kp ESC>;
     };
+    // kill process in emacs
     combo_ctrl_g {
         timeout-ms = <50>;
         key-positions = <26 27>; // H ,
         layers = <0>;
-        bindings = <&mcr_ctrl_g>;
+        bindings = <&kp LC(G)>;
     };
     combo_del {
         timeout-ms = <50>;
@@ -135,7 +120,7 @@
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&lt NAV BSPC>, <&mcr_ctrl_bspc>;
+      bindings = <&lt NAV BSPC>, <&kp LC(BSPC)>;
     };
     td_semi: tap_dance_semi {
       compatible = "zmk,behavior-tap-dance";
