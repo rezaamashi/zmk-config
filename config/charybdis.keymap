@@ -49,20 +49,6 @@
             , <&macro_tap &kp RET>
             ;
         };
-    mcr_alt_tab: mcr_alt_tab {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings
-            = <&macro_tap &kp LA(TAB)>
-            ;
-        };
-    mcr_alt_backtab: mcr_alt_backtab {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings
-            = <&macro_tap &kp LA(LS(TAB))>
-            ;
-        };
   };
 
   combos {
