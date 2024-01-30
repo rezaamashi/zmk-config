@@ -196,7 +196,7 @@
         nav_layer {
             bindings = <
 	&trans           &trans      &trans         &trans         &kp K_LOCK        &kp K_UNDO   &kp K_CUT    &kp K_COPY  &kp K_PASTE   &kp K_REDO
-	&kp LGUI         &kp LALT    &kp LCTRL      &kp LSHFT      &trans            &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT     &u_caps_word
+	&kp LGUI         &kp LALT    &kp LCTRL      &kp LSHFT      &kp K_APP         &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT     &u_caps_word
 	&trans           &trans      &trans         &trans         &trans            &kp HOME     &kp PG_DN    &kp PG_UP   &kp END       &kp INS
                                  &none          &trans         &trans            &trans       &trans
             >;
