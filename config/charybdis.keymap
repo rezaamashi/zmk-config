@@ -155,7 +155,7 @@
         // using Colemak-DH
         default_layer {
             bindings = <
-	&kp Q           &kp W        &kp F          &kp P          &kp B             &kp J        &kp L        &kp U        &kp Y        &kp SQT
+	&kp Q           &kp W        &kp F          &kp P          &kp B             &kp J        &kp L        &kp U        &kp Y        &kp SEMI
 	&hm LGUI A      &hm LALT R   &hm LCTRL S    &hm LSHFT T    &kp G             &kp M        &hm RSHFT N  &hm RCTRL E  &hm RALT I   &hm RGUI O
 	&kp Z           &kp X        &kp C          &kp D          &kp V             &kp K        &kp H        &kp COMMA    &kp DOT      &kp FSLH
 	                             &none          &lt NAV BSPC   &lt MED TAB       &lt SYM RET  &lt NUM SPACE
@@ -174,7 +174,7 @@
 //                 | -:- |    -    ||      ||  .  |     |     |
 // -----------------------------------------------------------------------------------------
 	&kp RBKT        &kp N7       &kp N8         &kp N9         &kp LBKT          &kp K_LOCK   &trans       &trans       &trans       &trans
-	&kp SEMI        &kp N4       &kp N5         &kp N6         &kp EQUAL         &trans       &kp RSHFT    &kp RCTRL    &kp RALT     &kp RGUI
+	&kp SQT         &kp N4       &kp N5         &kp N6         &kp EQUAL         &trans       &kp RSHFT    &kp RCTRL    &kp RALT     &kp RGUI
 	&kp GRAVE       &kp N1       &kp N2         &kp N3         &kp NUBS          &trans       &trans       &trans       &trans       &trans
 	                             &none          &kp N0         &kp MINUS         &kp DOT      &trans
             >;
