@@ -158,8 +158,8 @@
 	&kp Q           &kp W        &kp F          &kp P          &kp B             &kp J        &kp L        &kp U        &kp Y        &kp SQT
 	&hm LGUI A      &hm LALT R   &hm LCTRL S    &hm LSHFT T    &kp G             &kp M        &hm RSHFT N  &hm RCTRL E  &hm RALT I   &hm RGUI O
 	&kp Z           &kp X        &kp C          &kp D          &kp V             &kp K        &kp H        &kp COMMA    &kp DOT      &kp FSLH
-	                             &trans         &lt NAV BSPC   &lt MED TAB       &lt SYM RET  &lt NUM SPACE
 //                                                   |             |-------(MSE)-------|             |
+	                             &none          &lt NAV BSPC   &lt MED TAB       &lt SYM RET  &lt NUM SPACE
 //                                                   |---------------------(FUN)---------------------|
 //                                                                 |------ (nul)---------------------|
 //                                                   |---------------------(nul)-------|
@@ -176,7 +176,7 @@
 	&kp RBKT        &kp N7       &kp N8         &kp N9         &kp LBKT          &kp K_LOCK   &trans       &trans       &trans       &trans
 	&kp SEMI        &kp N4       &kp N5         &kp N6         &kp EQUAL         &trans       &kp RSHFT    &kp RCTRL    &kp RALT     &kp RGUI
 	&kp GRAVE       &kp N1       &kp N2         &kp N3         &kp NUBS          &trans       &trans       &trans       &trans       &trans
-	                             &trans         &kp N0         &kp MINUS         &kp DOT      &trans
+	                             &none          &kp N0         &kp MINUS         &kp DOT      &trans
             >;
         };
         sym_layer {
@@ -190,15 +190,15 @@
 	&kp RBRC        &kp AMPS     &kp STAR       &kp LPAR       &kp LBRC          &kp K_LOCK   &trans       &trans      &trans        &trans
 	&kp COLON       &kp DLLR     &kp PRCNT      &kp CARET      &kp PLUS          &trans       &kp RSHFT    &kp RCTRL   &kp LALT      &kp RGUI
 	&kp TILDE2      &kp EXCL     &kp AT_SIGN    &kp NUHS       &kp PIPE2         &trans       &trans       &trans      &trans        &trans
-	                             &trans         &kp LPAR       &kp UNDER         &trans       &kp RPAR
+	                             &none          &kp LPAR       &kp UNDER         &trans       &kp RPAR
             >;
         };
         nav_layer {
             bindings = <
 	&trans           &trans      &trans         &trans         &kp K_LOCK        &kp K_UNDO   &kp K_CUT    &kp K_COPY  &kp K_PASTE   &kp K_REDO
 	&kp LGUI         &kp LALT    &kp LCTRL      &kp LSHFT      &trans            &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT     &u_caps_word
-	&sys_reset       &trans      &trans         &trans         &trans            &kp HOME     &kp PG_DN    &kp PG_UP   &kp END       &kp INS
-                                 &trans         &trans         &trans            &kp RET      &kp SPACE
+	&trans           &trans      &trans         &trans         &trans            &kp HOME     &kp PG_DN    &kp PG_UP   &kp END       &kp INS
+                                 &none          &trans         &trans            &trans       &trans
             >;
         };
         med_layer {
@@ -206,7 +206,7 @@
 	&bootloader     &sys_reset  &trans           &trans        &kp K_LOCK        &trans       &trans       &trans       &sys_reset   &bootloader
 	&kp LGUI        &kp LALT    &kp LCTRL        &kp LSHFT     &trans            &kp K_PREV   &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT   &trans
 	&trans          &trans      &trans           &trans        &trans            &kp C_PIP    &kp C_BRI_DN &kp C_BRI_UP &trans       &trans
-	                            &trans           &trans        &trans            &kp K_MUTE   &kp K_STOP2
+	                            &none            &trans        &trans            &kp K_MUTE   &kp K_STOP2
             >;
         };
         fun_layer {
@@ -214,7 +214,7 @@
 	&kp K_LOCK      &trans       &trans         &trans         &trans            &kp F12      &kp F7       &kp F8         &kp F9     &kp SYSREQ
 	&trans          &kp RSHFT    &kp RCTRL      &kp LALT       &kp RGUI          &kp F11      &kp F4       &kp F5         &kp F6     &kp PRINTSCREEN
 	&trans          &trans       &trans         &trans         &trans            &kp F10      &kp F1       &kp F2         &kp F3     &kp PAUSE_BREAK
-	                             &trans         &trans         &kp TAB           &kp K_APP    &trans
+	                            &none          &trans         &trans            &trans       &trans
             >;
         };
         mse_layer {
