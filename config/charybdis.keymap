@@ -137,6 +137,13 @@
       tapping-term-ms = <200>;
       bindings = <&kp BSPC>, <&kp BSPC>, <&mcr_ctrl_bspc>;
     };
+    td_semi: tap_dance_semi {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&kp SEMI>, <&kp SQT>;
+    };
+  };
   };
 
   keymap {
@@ -145,7 +152,7 @@
         // using Colemak-DH
         default_layer {
             bindings = <
-	&kp Q           &kp W        &kp F          &kp P          &kp B             &kp J        &kp L        &kp U        &kp Y        &kp SEMI
+	&kp Q           &kp W        &kp F          &kp P          &kp B             &kp J        &kp L        &kp U        &kp Y        &td_semi
 	&hm LGUI A      &hm LALT R   &hm LCTRL S    &hm LSHFT T    &kp G             &kp M        &hm RSHFT N  &hm RCTRL E  &hm RALT I   &hm RGUI O
 	&kp Z           &kp X        &kp C          &kp D          &kp V             &kp K        &kp H        &kp COMMA    &kp DOT      &kp FSLH
 	                             &none          &lt NAV BSPC   &lt MED TAB       &lt SYM RET  &lt NUM SPACE
