@@ -88,7 +88,7 @@
   behaviors {
     hm: homerow_mods {
       compatible = "zmk,behavior-hold-tap";
-      label = "HOMEROW_MODS";
+      // label = "HOMEROW_MODS";
       #binding-cells = <2>;
       tapping-term-ms = <200>;
       quick-tap-ms = <200>;
@@ -97,7 +97,7 @@
     };
     u_caps_word: u_caps_word {
       compatible = "zmk,behavior-mod-morph";
-      label = "u_caps_word";
+      // label = "u_caps_word";
       #binding-cells = <0>;
       bindings = <&caps_word>, <&kp CAPS>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
