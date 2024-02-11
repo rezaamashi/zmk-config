@@ -105,7 +105,7 @@
     td_bspc: tap_dance_bspc {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
-      tapping-term-ms = <200>;
+      tapping-term-ms = <250>;
       bindings = <&lt NAV BSPC>, <&kp LC(BSPC)>;
     };
     td_semi: tap_dance_semi {
