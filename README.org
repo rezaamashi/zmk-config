@@ -29,6 +29,10 @@ no longer experience any problem on this
 
    Tips from discord help forum to put the homerow ~&lt~ into the tap_dance
 
+** DONE Better Mac OS compatibility
+   CLOSED: [2024-07-26 Fri 16:27]
+   use ~C~ instead of ~K~ for some media keys
+
 * Credits
 - @bastardkb
 - @petejohansson
