@@ -76,7 +76,7 @@
         timeout-ms = <50>;
         key-positions = <33 34>; // RET SPACE
         layers = <0>;
-        bindings = <&kp DEL>;
+        bindings = <&td_del>;
     };
     combo_repeat {
         timeout-ms = <50>;
@@ -103,18 +103,32 @@
       bindings = <&caps_word>, <&kp CAPS>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+
+//    Tap-Dance
 //    td_bspc: tap_dance_bspc {
 //      compatible = "zmk,behavior-tap-dance";
 //      #binding-cells = <0>;
 //      tapping-term-ms = <250>;
 //      bindings = <&lt NAV BSPC>, <&kp LC(BSPC)>;
-//    };
-//  MacOS specific quirk (Options-Delete)
+//    }
+//    td_del: tap_dance_del {
+//      compatible = "zmk,behavior-tap-dance";
+//      #binding-cells = <0>;
+//      tapping-term-ms = <250>;
+//      bindings = <&kp DEL>, <&kp LC(DEL)>;
+//    }
+//  MacOS specific quirk
     td_bspc: tap_dance_bspc {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
       bindings = <&lt NAV BSPC>, <&kp LA(BSPC)>;
+    };
+    td_del: tap_dance_delete {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <250>;
+      bindings = <&kp DEL>, <&kp LA(DEL)>;
     };
     td_semi: tap_dance_semi {
       compatible = "zmk,behavior-tap-dance";
