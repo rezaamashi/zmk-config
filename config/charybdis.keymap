@@ -103,11 +103,18 @@
       bindings = <&caps_word>, <&kp CAPS>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+//    td_bspc: tap_dance_bspc {
+//      compatible = "zmk,behavior-tap-dance";
+//      #binding-cells = <0>;
+//      tapping-term-ms = <250>;
+//      bindings = <&lt NAV BSPC>, <&kp LC(BSPC)>;
+//    };
+//  MacOS specific quirk (Options-Delete)
     td_bspc: tap_dance_bspc {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&lt NAV BSPC>, <&kp LC(BSPC)>;
+      bindings = <&lt NAV BSPC>, <&kp LA(BSPC)>;
     };
     td_semi: tap_dance_semi {
       compatible = "zmk,behavior-tap-dance";
