@@ -85,6 +85,12 @@
         layers = <0>;
         bindings = <&key_repeat>;
     };
+    combo_toggle_qwerty {
+        timeout-ms = <50>;
+        key-positions = <20 21>; // Z X
+        layers = <DEFAULT QWE>;
+        bindings = <&tog QWE>;
+    };
   };
 
   behaviors {
