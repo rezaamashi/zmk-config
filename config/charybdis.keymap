@@ -129,7 +129,7 @@
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <250>;
-      bindings = <&kp DEL>, <&kp LA(DEL)>;
+      bindings = <&kp DEL>, <&kp LC(DEL)>;
     };
     td_semi: tap_dance_semi {
       compatible = "zmk,behavior-tap-dance";
