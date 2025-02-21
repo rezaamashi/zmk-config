@@ -77,7 +77,8 @@
         timeout-ms = <50>;
         key-positions = <33 34>; // RET SPACE
         layers = <0>;
-        bindings = <&td_del>;
+        bindings = <&kp DEL>;
+       // bindings = <&td_del>;
     };
     combo_repeat {
         timeout-ms = <50>;
@@ -151,10 +152,10 @@
         // using Colemak-DH
         default_layer {
             bindings = <
-	&kp Q           &kp W        &kp F          &kp P          &kp B             &kp J        &kp L        &kp U        &kp Y        &td_semi
+	&kp Q           &kp W        &kp F          &kp P          &kp B             &kp J        &kp L        &kp U        &kp Y        &kp SEMI
 	&hm LGUI A      &hm LALT R   &hm LCTRL S    &hm LSHFT T    &kp G             &kp M        &hm RSHFT N  &hm RCTRL E  &hm LALT I   &hm RGUI O
 	&kp Z           &kp X        &kp C          &kp D          &kp V             &kp K        &kp H        &kp COMMA    &kp DOT      &kp FSLH
-	                             &none          &td_bspc       &lt MED TAB       &lt SYM RET  &lt NUM SPACE
+	                             &none          &lt NAV BSPC   &lt MED TAB       &lt SYM RET  &lt NUM SPACE
 // conditional layer visual                          |             |-------(MSE)-------|             |
 //                                                   |---------------------(FUN)---------------------|
 //                                                                 |------ (nul)---------------------|
