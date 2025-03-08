@@ -93,6 +93,12 @@
         layers = <DEFAULT QWE>;
         bindings = <&tog QWE>;
     };
+    combo_toggle_mse {
+        timeout-ms = <50>;
+        key-positions = <6 7>; // L U 
+        layers = <DEFAULT QWE MSE>;
+        bindings = <&tog MSE>;
+    };
   };
 
   behaviors {
