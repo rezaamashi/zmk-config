@@ -192,14 +192,14 @@
         sym_layer {
             bindings = <
 // -----------------------------------------------------------------------------------------
-// | { |  &  |  *  |  (  |  }  ||      || -:- |       |     |     |     |     |     |
-// | : |  $  |  %  |  ^  |  +  ||      ||     |  -:-  | -:- | -:- | -:- | -:- | -:- |
+// | { |  &  |  *  |  (  |  }  ||      || -:- |       |     |     |     |     |  :  |
+// | " |  $  |  %  |  ^  |  +  ||      ||     |  -:-  | -:- | -:- | -:- | -:- | -:- |
 // | ~ |  !  | "/@ | £/# |  |  ||      ||     |# (nUS)|     |     |     |     |     |
 //                 |  )  |  _  ||      ||     |       |     |
 // -----------------------------------------------------------------------------------------
-	&kp LBRC        &kp AMPS     &kp STAR       &kp LPAR       &kp RBRC          &kp K_LOCK   &kp K_PWR    &trans      &trans        &trans
-	&kp COLON       &kp DLLR     &kp PRCNT      &kp CARET      &kp PLUS          &kp GLOBE    &kp RSHFT    &kp RCTRL   &kp LALT      &kp RGUI
-	&kp TILDE2      &kp EXCL     &kp AT_SIGN    &kp HASH       &kp PIPE2         &trans       &kp NUHS     &trans      &trans        &trans
+	&kp LBRC        &kp AMPS     &kp STAR       &kp LPAR       &kp RBRC          &kp K_LOCK   &kp K_PWR    &trans      &trans        &kp COLON
+	&kp DQT         &kp DLLR     &kp PRCNT      &kp CARET      &kp PLUS          &kp GLOBE    &kp RSHFT    &kp RCTRL   &kp LALT      &kp RGUI
+	&kp TILDE       &kp EXCL     &kp AT_SIGN    &kp HASH       &kp PIPE          &trans       &kp NUHS     &trans      &trans        &trans
 	                             &none          &kp RPAR       &kp UNDER         &trans       &trans
             >;
         };
