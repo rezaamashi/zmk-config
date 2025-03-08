@@ -1,0 +1,12 @@
+file_format: "1"
+id: charybdis
+name: charybdis
+type: shield
+url: https://github.com/rezaamashi/zmk-config
+requires: [nrfmicro_13]
+features:
+  - keys
+  - zmk studio
+siblings:
+   - charybdis_left
+   - charybdis_right
