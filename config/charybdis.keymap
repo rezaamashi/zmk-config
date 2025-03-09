@@ -129,24 +129,24 @@
 //      bindings = <&kp DEL>, <&kp LC(DEL)>;
 //    }
 //  MacOS specific quirk
-    td_bspc: tap_dance_bspc {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <250>;
-      bindings = <&lt NAV BSPC>, <&kp LA(BSPC)>;
-    };
-    td_del: tap_dance_delete {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <250>;
-      bindings = <&kp DEL>, <&kp LC(DEL)>;
-    };
-    td_semi: tap_dance_semi {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&kp SEMI>, <&kp SQT>;
-    };
+//    td_bspc: tap_dance_bspc {
+//      compatible = "zmk,behavior-tap-dance";
+//      #binding-cells = <0>;
+//      tapping-term-ms = <250>;
+//      bindings = <&lt NAV BSPC>, <&kp LA(BSPC)>;
+//    };
+//    td_del: tap_dance_delete {
+//      compatible = "zmk,behavior-tap-dance";
+//      #binding-cells = <0>;
+//      tapping-term-ms = <250>;
+//      bindings = <&kp DEL>, <&kp LC(DEL)>;
+//    };
+//    td_semi: tap_dance_semi {
+//      compatible = "zmk,behavior-tap-dance";
+//      #binding-cells = <0>;
+//      tapping-term-ms = <200>;
+//      bindings = <&kp SEMI>, <&kp SQT>;
+//    };
   };
 
   keymap {
@@ -171,7 +171,7 @@
 	&kp Q           &kp W        &kp E          &kp R          &kp T             &kp Y        &kp U        &kp I        &kp O        &kp P
 	&hm LGUI A      &hm LALT S   &hm LCTRL D    &hm LSHFT F    &kp G             &kp H        &hm RSHFT J  &hm RCTRL K  &hm LALT L   &hm RGUI SEMI
 	&kp Z           &kp X        &kp C          &kp V          &kp B             &kp N        &kp M        &kp COMMA    &kp DOT      &kp FSLH
-	                             &none          &td_bspc       &lt MED TAB       &lt SYM RET  &lt NUM SPACE
+	                             &none          &lt NAV BSPC   &lt MED TAB       &lt SYM RET  &lt NUM SPACE
 // conditional layer also applies here
             >;
         };
