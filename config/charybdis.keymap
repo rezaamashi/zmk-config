@@ -107,15 +107,6 @@
       flavor = "balanced";
       bindings = <&kp>, <&kp>;
     };
-    nav_hold_tog: nav_hold_toggle {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      tapping-term-ms = <200>;
-      quick-tap-ms = <175>;
-      require-prior-idle-ms = <150>;
-      flavor = "balanced";
-      bindings = <&mo>, <&tog>;
-    };
     u_caps_word: u_caps_word {
       compatible = "zmk,behavior-mod-morph";
       // label = "u_caps_word";
@@ -219,8 +210,8 @@
             bindings = <
 	&trans           &trans      &trans         &kp K_PWR      &kp K_LOCK        &kp K_UNDO   &kp K_CUT    &kp K_COPY  &kp K_PASTE   &kp K_REDO
 	&kp LGUI         &kp LALT    &kp LCTRL      &kp LSHFT      &kp K_APP         &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT     &u_caps_word
-	&trans           &trans      &trans         &to  NAV       &trans            &kp HOME     &kp PG_DN    &kp PG_UP   &kp END       &kp INS
-                                 &none          &nav_hold_tog NAV NAV  &trans            &trans       &trans
+	&trans           &trans      &trans         &trans         &trans            &kp HOME     &kp PG_DN    &kp PG_UP   &kp END       &kp INS
+                                 &none          &trans         &trans            &trans       &trans
             >;
         };
 
