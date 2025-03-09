@@ -72,20 +72,18 @@
     combo_ctrl_g {
         timeout-ms = <50>;
         key-positions = <26 27>; // H ,
-        layers = <0>;
+        layers = <DEFAULT QWE>;
         bindings = <&kp LC(G)>;
     };
     combo_del {
         timeout-ms = <50>;
         key-positions = <33 34>; // RET SPACE
-        layers = <0>;
         bindings = <&kp DEL>;
        // bindings = <&td_del>;
     };
     combo_repeat {
         timeout-ms = <50>;
         key-positions = <31 32>; // BSPC TAB
-        layers = <0>;
         bindings = <&key_repeat>;
     };
     combo_toggle_qwerty {
