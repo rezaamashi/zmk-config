@@ -35,10 +35,6 @@
             if-layers = <NAV NUM>;
             then-layer = <FUN>;
         };
-        mse_layer {
-            if-layers = <MED SYM>;
-            then-layer = <MSE>;
-        };
   };
 
   macros {
@@ -163,7 +159,7 @@
 	&hm LGUI A      &hm LALT R   &hm LCTRL S    &hm LSHFT T    &kp G             &kp M        &hm RSHFT N  &hm RCTRL E  &hm LALT I   &hm RGUI O
 	&kp Z           &kp X        &kp C          &kp D          &kp V             &kp K        &kp H        &kp COMMA    &kp DOT      &kp FSLH
 	                             &none          &lt NAV BSPC   &lt MED TAB       &lt SYM RET  &lt NUM SPACE
-// conditional layer visual                          |             |-------(MSE)-------|             |
+// conditional layer visual                          |             |-------(nul)-------|             |
 //                                                   |---------------------(FUN)---------------------|
 //                                                                 |------ (nul)---------------------|
 //                                                   |---------------------(nul)-------|
