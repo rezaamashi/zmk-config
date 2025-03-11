@@ -94,6 +94,12 @@
         layers = <DEFAULT QWE MSE>;
         bindings = <&tog MSE>;
     };
+    combo_quit_esc_mse {
+        timeout-ms = <50>;
+        key-positions = <16 17>; // N E
+        layers = <MSE>;
+        bindings = <&tog MSE>;
+    };
   };
 
   behaviors {
