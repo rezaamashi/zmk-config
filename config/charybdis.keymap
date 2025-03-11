@@ -62,6 +62,7 @@
     combo_esc {
         timeout-ms = <50>;
         key-positions = <16 17>; // N E
+        layers = <DEFAULT QWE>;
         bindings = <&kp ESC>;
     };
     // kill process in emacs
