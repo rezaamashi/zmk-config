@@ -106,7 +106,7 @@
         layers = <DEFAULT QWE NAV>;
         bindings = <&tog NAV>;
     };
-    combo_quit_esc_mse {
+    combo_quit_esc_nav {
         timeout-ms = <50>;
         key-positions = <16 17>; // N E
         layers = <NAV>;
