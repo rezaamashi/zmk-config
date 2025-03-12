@@ -101,11 +101,11 @@
         layers = <MSE>;
         bindings = <&tog MSE>;
     };
-    combo_toggle_nav {
+    combo_to_nav {
         timeout-ms = <50>;
-        key-positions = <3 4>; // F P
-        layers = <DEFAULT QWE NAV>;
-        bindings = <&tog NAV>;
+        key-positions = <13 14>; // S T
+        layers = <DEFAULT QWE>;
+        bindings = <&to NAV>;
     };
     combo_quit_esc_nav {
         timeout-ms = <50>;
