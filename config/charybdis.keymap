@@ -70,7 +70,7 @@
         timeout-ms = <50>;
         key-positions = <16 17>; // N E
         require-prior-idle-ms = <150>;
-        layers = <DEFAULT QWE>;
+        layers = <DEFAULT QWE NAV>;
         bindings = <&kp ESC>;
     };
     // kill process in emacs
@@ -110,7 +110,7 @@
     };
     combo_quit_esc_mse {
         timeout-ms = <50>;
-        key-positions = <2 3>; // F P
+        key-positions = <16 17>; // N E
         require-prior-idle-ms = <150>;
         layers = <MSE>;
         bindings = <&tog MSE>;
