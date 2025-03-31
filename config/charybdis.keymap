@@ -266,13 +266,13 @@
         };
 
       // ZMK Studio allow a placeholder layout that can be modified in the app
-      extra_layer_0 {
-            status = "reserved";
-        };
-
-      extra_layer_1 {
-            status = "reserved";
-        };
+//      extra_layer_0 {
+//            status = "reserved";
+//        };
+//
+//      extra_layer_1 {
+//            status = "reserved";
+//        };
 
     };
 };
