@@ -1,9 +1,6 @@
 #include "charybdis_common.dtsi"
 
 / {
-	chosen {
-		zmk,matrix_transform = &default_transform;
-	};
 
 // | k01  | k02  | k03  | k04  | k05  |                  | k45  | k44  | k43  | k42  | k41  |
 // | k11  | k12  | k13  | k14  | k15  |                  | k55  | k54  | k53  | k52  | k51  |
