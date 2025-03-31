@@ -130,6 +130,20 @@
       bindings = <&caps_word>, <&kp CAPS>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+    num_word: num_word {
+      compatible = "zmk,behavior-auto-layer"; // Requires urob's zmk-auto-layer module
+      #binding-cells = <0>;
+      layers = <NUM>;
+      continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+      ignore-numbers;
+    };
+    nav_word: nav_word {
+      compatible = "zmk,behavior-auto-layer";
+      #binding-cells = <0>;
+      layers = <NAV>;
+      continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP>;
+      ignore-modifiers;
+    };
 
 //    Tap-Dance
 //    td_bspc: tap_dance_bspc {
@@ -197,14 +211,14 @@
             display-name = "Nm";
             bindings = <
 // -----------------------------------------------------------------------------------------
-// | [ | -:- | -:- | -:- | ] ||      || -:- |       |     |     |     |     |     |
-// | ' | -:- | -:- | -:- | = ||      ||     |  -:-  | -:- | -:- | -:- | -:- | -:- |
-// | ` | -:- | -:- | -:- | \ ||      ||     |\ (nUS)|     |     |     |     |     |
-//                 | -:- | - ||      ||  .  |       |     |
+// | [ | -:- | -:- | -:- | ] ||      || -:-   |         |     |     |     |     |     |
+// | ' | -:- | -:- | -:- | = ||      ||       |  -:-    | -:- | -:- | -:- | -:- | -:- |
+// | ` | -:- | -:- | -:- | \ ||      ||\ (nUS)| numword |     |     |     |     |     |
+//                 | -:- | - ||      ||  .    |         |     |
 // -----------------------------------------------------------------------------------------
 	&kp LBKT        &kp N7       &kp N8         &kp N9         &kp RBKT          &kp K_LOCK   &kp K_PWR    &to DEFAULT  &to QWE      &trans
 	&kp SQT         &kp N4       &kp N5         &kp N6         &kp EQUAL         &kp GLOBE    &kp RSHFT    &kp RCTRL    &kp LALT     &kp RGUI
-	&kp GRAVE       &kp N1       &kp N2         &kp N3         &kp BSLH          &trans       &kp NUHS     &trans       &trans       &trans
+	&kp GRAVE       &kp N1       &kp N2         &kp N3         &kp BSLH          &kp NUHS     &num_word    &trans       &trans       &trans
 	                             &none          &kp N0         &kp MINUS         &kp DOT      &trans
             >;
         };
@@ -228,9 +242,9 @@
         nav_layer {
             display-name = "Nv";
             bindings = <
-	&trans           &trans      &trans         &kp K_PWR      &kp K_LOCK        &kp K_UNDO   &kp K_CUT    &kp K_COPY  &kp K_PASTE   &kp K_REDO
-	&kp LGUI         &kp LALT    &kp LCTRL      &kp LSHFT      &kp K_APP         &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT     &u_caps_word
-	&trans           &trans      &trans         &trans         &trans            &kp HOME     &kp PG_DN    &kp PG_UP   &kp END       &kp INS
+	&trans           &trans      &u_caps_word   &kp K_PWR      &kp K_LOCK        &kp K_UNDO   &kp K_CUT    &kp K_COPY  &kp K_PASTE   &kp K_REDO
+	&kp LGUI         &kp LALT    &kp LCTRL      &kp LSHFT      &kp K_APP         &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT     &nav_word
+	&trans           &trans      &trans         &kp SCROLLLOCK &trans            &kp HOME     &kp PG_DN    &kp PG_UP   &kp END       &kp INS
                                  &none          &trans         &trans            &trans       &trans
             >;
         };
