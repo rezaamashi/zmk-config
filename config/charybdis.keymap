@@ -98,19 +98,13 @@
         layers = <MSE>;
         bindings = <&tog MSE>;
     };
-//    combo_to_nav {
-//        timeout-ms = <50>;
-//        key-positions = <13 14>; // S T
-//        layers = <DEFAULT QWE>;
-//        bindings = <&to NAV>;
-//    };
-//    combo_quit_esc_nav {
-//        timeout-ms = <50>;
-//        key-positions = <16 17>; // N E
-//        layers = <NAV>;
-//        bindings = <&tog NAV>;
-//    };
-  };
+    combo_nav_word {
+        timeout-ms = <50>;
+        key-positions = <13 14>; // S T
+        layers = <DEFAULT QWE>;
+        bindings = <&nav_word>;
+    };
+ };
 
   behaviors {
     hm: homerow_mods {
@@ -242,8 +236,8 @@
         nav_layer {
             display-name = "Nv";
             bindings = <
-	&trans           &trans      &u_caps_word   &kp K_PWR      &kp K_LOCK        &kp K_UNDO   &kp K_CUT    &kp K_COPY  &kp K_PASTE   &kp K_REDO
-	&kp LGUI         &kp LALT    &kp LCTRL      &kp LSHFT      &kp K_APP         &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT     &nav_word
+	&trans           &trans      &trans         &kp K_PWR      &kp K_LOCK        &kp K_UNDO   &kp K_CUT    &kp K_COPY  &kp K_PASTE   &kp K_REDO
+	&kp LGUI         &kp LALT    &kp LCTRL      &kp LSHFT      &kp K_APP         &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT     &u_caps_word
 	&trans           &trans      &trans         &kp SCROLLLOCK &trans            &kp HOME     &kp PG_DN    &kp PG_UP   &kp END       &kp INS
                                  &none          &trans         &trans            &trans       &trans
             >;
