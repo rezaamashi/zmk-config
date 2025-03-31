@@ -88,21 +88,27 @@
     };
     combo_toggle_mse {
         timeout-ms = <50>;
-        key-positions = <6 7>; // L U 
+        key-positions = <2 3>; // F P
         layers = <DEFAULT QWE MSE>;
         bindings = <&tog MSE>;
     };
     combo_quit_esc_mse {
         timeout-ms = <50>;
-        key-positions = <16 17>; // N E
+        key-positions = <2 3>; // F P
         layers = <MSE>;
         bindings = <&tog MSE>;
     };
     combo_nav_word {
         timeout-ms = <50>;
-        key-positions = <13 14>; // S T
+        key-positions = <12 13>; // S T
         layers = <DEFAULT QWE>;
         bindings = <&nav_word NAV>;
+    };
+    combo_num_word {
+        timeout-ms = <50>;
+        key-positions = <16 17>; // L U
+        layers = <DEFAULT QWE>;
+        bindings = <&nav_word NUM>;
     };
  };
 
@@ -128,6 +134,7 @@
       compatible = "zmk,behavior-auto-layer"; // Requires urob's zmk-auto-layer module
       #binding-cells = <1>;
       continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+      ignore-modifiers;
       ignore-numbers;
     };
     nav_word: nav_word {
@@ -203,14 +210,14 @@
             display-name = "Nm";
             bindings = <
 // -----------------------------------------------------------------------------------------
-// | [ | -:- | -:- | -:- | ] ||      || -:-   |         |     |     |     |     |     |
-// | ' | -:- | -:- | -:- | = ||      ||       |  -:-    | -:- | -:- | -:- | -:- | -:- |
-// | ` | -:- | -:- | -:- | \ ||      ||\ (nUS)| numword |     |     |     |     |     |
-//                 | -:- | - ||      ||  .    |         |     |
+// | [ | -:- | -:- | -:- | ] ||      || -:- |       |     |     |     |     |     |
+// | ' | -:- | -:- | -:- | = ||      ||     |  -:-  | -:- | -:- | -:- | -:- | -:- |
+// | ` | -:- | -:- | -:- | \ ||      ||     |\ (nUS)|     |     |     |     |
+//                 | -:- | - ||      ||  .  |       |     |
 // -----------------------------------------------------------------------------------------
 	&kp LBKT        &kp N7       &kp N8         &kp N9         &kp RBKT          &kp K_LOCK   &kp K_PWR     &to DEFAULT  &to QWE      &trans
 	&kp SQT         &kp N4       &kp N5         &kp N6         &kp EQUAL         &kp GLOBE    &kp RSHFT     &kp RCTRL    &kp LALT     &kp RGUI
-	&kp GRAVE       &kp N1       &kp N2         &kp N3         &kp BSLH          &kp NUHS     &num_word NUM &trans       &trans       &trans
+	&kp GRAVE       &kp N1       &kp N2         &kp N3         &kp BSLH          &trans       &kp NUHS      &trans       &trans       &trans
 	                             &none          &kp N0         &kp MINUS         &kp DOT      &trans
             >;
         };
