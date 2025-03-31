@@ -62,14 +62,14 @@
     combo_colon_w {
         timeout-ms = <50>;
         key-positions = <1 2>; // W F
-        require-prior-idle-ms = <150>
+        require-prior-idle-ms = <150>;
         layers = <DEFAULT QWE>;  // this is optional, but I like it to be enabled only on layout layer
         bindings = <&mcr_colon_w>;
     };
     combo_esc {
         timeout-ms = <50>;
         key-positions = <16 17>; // N E
-        require-prior-idle-ms = <150>
+        require-prior-idle-ms = <150>;
         layers = <DEFAULT QWE>;
         bindings = <&kp ESC>;
     };
@@ -77,55 +77,55 @@
     combo_ctrl_g {
         timeout-ms = <50>;
         key-positions = <26 27>; // H ,
-        require-prior-idle-ms = <150>
+        require-prior-idle-ms = <150>;
         layers = <DEFAULT QWE>;
         bindings = <&kp LC(G)>;
     };
     combo_del {
         timeout-ms = <50>;
         key-positions = <33 34>; // RET SPACE
-        require-prior-idle-ms = <150>
+        require-prior-idle-ms = <150>;
         bindings = <&kp DEL>;
        // bindings = <&td_del>;
     };
     combo_repeat {
         timeout-ms = <50>;
         key-positions = <31 32>; // BSPC TAB
-        require-prior-idle-ms = <150>
+        require-prior-idle-ms = <150>;
         bindings = <&key_repeat>;
     };
     combo_toggle_qwerty {
         timeout-ms = <50>;
         key-positions = <20 21>; // Z X
-        require-prior-idle-ms = <150>
+        require-prior-idle-ms = <150>;
         layers = <DEFAULT QWE>;
         bindings = <&tog QWE>;
     };
     combo_toggle_mse {
         timeout-ms = <50>;
         key-positions = <2 3>; // F P
-        require-prior-idle-ms = <150>
+        require-prior-idle-ms = <150>;
         layers = <DEFAULT QWE MSE>;
         bindings = <&tog MSE>;
     };
     combo_quit_esc_mse {
         timeout-ms = <50>;
         key-positions = <2 3>; // F P
-        require-prior-idle-ms = <150>
+        require-prior-idle-ms = <150>;
         layers = <MSE>;
         bindings = <&tog MSE>;
     };
     combo_nav_word {
         timeout-ms = <50>;
         key-positions = <12 13>; // S T
-        require-prior-idle-ms = <150>
+        require-prior-idle-ms = <150>;
         layers = <DEFAULT QWE>;
         bindings = <&nav_word NAV>;
     };
     combo_num_word {
         timeout-ms = <50>;
         key-positions = <6 7>; // L U
-        require-prior-idle-ms = <150>
+        require-prior-idle-ms = <150>;
         layers = <DEFAULT QWE>;
         bindings = <&num_word NUM>;
     };
