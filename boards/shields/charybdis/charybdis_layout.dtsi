@@ -5,6 +5,9 @@
         compatible = "zmk,physical-layout";
         display-name = "Default";
 
+        kscan = <&kscan0>;             // Reference kscan0 defined in charybdis_common.dtsi
+        transform = <&default_transform>; // Reference default_transform defined in charybdis.dtsi
+
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0   95       0     0     0>
             , <&key_physical_attrs 100 100  100   32       0     0     0>
