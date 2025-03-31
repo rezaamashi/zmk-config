@@ -102,7 +102,7 @@
         timeout-ms = <50>;
         key-positions = <13 14>; // S T
         layers = <DEFAULT QWE>;
-        bindings = <&nav_word>;
+        bindings = <&nav_word NAV>;
     };
  };
 
@@ -126,15 +126,13 @@
     };
     num_word: num_word {
       compatible = "zmk,behavior-auto-layer"; // Requires urob's zmk-auto-layer module
-      #binding-cells = <0>;
-      layers = <NUM>;
+      #binding-cells = <1>;
       continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
       ignore-numbers;
     };
     nav_word: nav_word {
       compatible = "zmk,behavior-auto-layer";
-      #binding-cells = <0>;
-      layers = <NAV>;
+      #binding-cells = <1>;
       continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP>;
       ignore-modifiers;
     };
@@ -210,9 +208,9 @@
 // | ` | -:- | -:- | -:- | \ ||      ||\ (nUS)| numword |     |     |     |     |     |
 //                 | -:- | - ||      ||  .    |         |     |
 // -----------------------------------------------------------------------------------------
-	&kp LBKT        &kp N7       &kp N8         &kp N9         &kp RBKT          &kp K_LOCK   &kp K_PWR    &to DEFAULT  &to QWE      &trans
-	&kp SQT         &kp N4       &kp N5         &kp N6         &kp EQUAL         &kp GLOBE    &kp RSHFT    &kp RCTRL    &kp LALT     &kp RGUI
-	&kp GRAVE       &kp N1       &kp N2         &kp N3         &kp BSLH          &kp NUHS     &num_word    &trans       &trans       &trans
+	&kp LBKT        &kp N7       &kp N8         &kp N9         &kp RBKT          &kp K_LOCK   &kp K_PWR     &to DEFAULT  &to QWE      &trans
+	&kp SQT         &kp N4       &kp N5         &kp N6         &kp EQUAL         &kp GLOBE    &kp RSHFT     &kp RCTRL    &kp LALT     &kp RGUI
+	&kp GRAVE       &kp N1       &kp N2         &kp N3         &kp BSLH          &kp NUHS     &num_word NUM &trans       &trans       &trans
 	                             &none          &kp N0         &kp MINUS         &kp DOT      &trans
             >;
         };
