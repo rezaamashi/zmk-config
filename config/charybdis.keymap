@@ -151,7 +151,7 @@
         flavor = "balanced";
         tapping-term-ms = <280>;
         quick-tap-ms = <175>;
-        require-prior-idle-ms = <125>;
+        require-prior-idle-ms = <150>;
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_R THUMBS>; // Trigger hold on opposite hand or thumbs
         hold-trigger-on-release;                      // Decide on release of trigger key
@@ -164,7 +164,7 @@
         flavor = "balanced";
         tapping-term-ms = <280>;
         quick-tap-ms = <175>;
-        require-prior-idle-ms = <125>;
+        require-prior-idle-ms = <150>;
         bindings = <&kp>, <&kp>;
         hold-trigger-key-positions = <KEYS_L THUMBS>; // Trigger hold on opposite hand or thumbs
         hold-trigger-on-release;                      // Decide on release of trigger key
