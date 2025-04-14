@@ -1,4 +1,3 @@
-#define CONFIG_WIRELESS
 #define HOST_OS 2 // macos
 #define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)                   \
     ZMK_LAYER(                                                                 \
