@@ -152,6 +152,20 @@ ZMK_AUTO_LAYER(num_word,
 )
 
 // -----------------------------------------------------------------------------------------
+// Swapper
+// -----------------------------------------------------------------------------------------
+
+// Cmd+Tab swapper, requires tri-state module.
+#if HOST_OS == 2 // MacOS
+    ZMK_TRI_STATE(swapper, bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
+                  ignored-key-positions = <LT2 RT2 RM1 RM2 RM3>;)
+#else
+// Alt+Tab swapper
+    ZMK_TRI_STATE(swapper, bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+                  ignored-key-positions = <LT2 RT2 RM1 RM2 RM3>;)
+#endif
+
+// -----------------------------------------------------------------------------------------
 // Nav Morph
 // -----------------------------------------------------------------------------------------
 
@@ -268,7 +282,7 @@ ZMK_BASE_LAYER(NUM,
 ZMK_BASE_LAYER(SYM,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 //|     {       |      &      |      *      |      (      |      }      | |             |             |             |             |      :      |
-	  &kp LBRC      &kp AMPS     &kp STAR       &kp LPAR      &kp RBRC  ,    &kp K_LOCK    &kp K_PWR        ___           ___        &kp COLON  ,
+	  &kp LBRC      &kp AMPS     &kp STAR       &kp LPAR      &kp RBRC  ,    &kp K_LOCK    &kp K_PWR        ___     &kp PAUSE_BREAK  &kp COLON  ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //|     "       |      $      |      %      |      ^      |      +      | |             |             |             |             |             |
 	  &kp DQT      &kp DLLR     &kp PRCNT      &kp CARET     &kp PLUS   ,   &kp GLOBE     &kp HMR_0      &kp HMR_1     &kp HMR_2     &kp HMR_3  ,
@@ -283,7 +297,7 @@ ZMK_BASE_LAYER(SYM,
 
 ZMK_BASE_LAYER(NAV,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-  	   &kp Q      &kp K_LOCK  &kp PAUSE_BREAK &kp K_PASTE    &kp K_PWR  ,       ___        NAV_PG_DN     NAV_PG_UP     &kp K_COPY    &kp SYSREQ ,
+  	   &kp Q      &kp LS(TAB)    &swapper    &kp K_PASTE    &kp K_PWR  ,       ___        NAV_PG_DN     NAV_PG_UP     &kp K_COPY    &kp SYSREQ ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
   	 &sk HML_3     &sk HML_2     &sk HML_1     &sk HML_0     &kp SLCK   ,     NAV_LEFT      &kp DOWN      &kp UP       NAV_RIGHT    &u_caps_word,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
