@@ -139,7 +139,7 @@ ZMK_ADAPTIVE_KEY(
         strict-modifiers;
 };)
 
-// Tap: num-word | Double-tap: sticky num-layer | Hold: sym-layer
+// Tap: num-word | Double-tap: sticky sym-layer | Hold: num-layer
 #define SMART_NUM &smart_num NUM 0
 ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
