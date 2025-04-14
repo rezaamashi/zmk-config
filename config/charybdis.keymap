@@ -6,7 +6,7 @@
                  LT RT                                                         \
                  LM RM                                                         \
                  LB RB                                                         \
-             XXX LH RH
+             XXX LH RH                                                         \
     )
 
 #include "custom/key-labels/35-l.h"
