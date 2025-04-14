@@ -116,7 +116,7 @@ MAKE_HRM(hmr, KEYS_L THUMBS)
 
 #include "macros.dtsi"
 #include "combos.dtsi"
-//#include "tapdance.dtsi"
+#include "tapdance.dtsi"
 
 // -----------------------------------------------------------------------------------------
 // Magic-Shift & Smart-Num
@@ -258,7 +258,7 @@ ZMK_BASE_LAYER(NUM,
 	&kp SQT         &kp N4       &kp N5         &kp N6       &kp EQUAL  ,    &kp GLOBE     &kp HMR_0     &kp HMR_1     &kp HMR_2     &kp HMR_3  ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //|     `       |             |             |             |      \      | |   \ (nUS)   |             |             |             |             |
-	&kp GRAVE       &kp N1       &kp N2         &kp N3       &kp BSLH   ,    &kp NUHS      NAV_BSPC       NAV_DEL         ___           ___     ,
+	&kp GRAVE       &kp N1       &kp N2         &kp N3       &kp BSLH   ,    &kp NUHS      NAV_BSPC       NAV_DEL       &td_dot         ___     ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
 //                                          |             |      -      | |             |             |
 	                                            &kp N0       &kp MINUS  ,       ___           ___
@@ -274,7 +274,7 @@ ZMK_BASE_LAYER(SYM,
 	  &kp DQT      &kp DLLR     &kp PRCNT      &kp CARET     &kp PLUS   ,   &kp GLOBE     &kp HMR_0      &kp HMR_1     &kp HMR_2     &kp HMR_3  ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //|     ~       |      !      |      @      |      #      |      |      | |   \ (nUS)   |             |             |             |             |
-	&kp TILDE      &kp EXCL     &kp AT_SIGN    &kp HASH       &kp PIPE  ,     &kp NUHS        ___           ___           ___           ___     ,
+	&kp TILDE      &kp EXCL     &kp AT_SIGN    &kp HASH       &kp PIPE  ,     &kp NUHS     NAV_BSPC       NAV_DEL       &td_dot         ___     ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
 //                                          |      )      |      _      | |             |             |
 	                                           &kp RPAR      &kp UNDER  ,       ___           ___
