@@ -35,6 +35,11 @@
 // Global settings
 // -----------------------------------------------------------------------------------------
 
+// HOST_OS variables zmk-helper
+// Windows is undef
+#define LINUX 1
+#define MACOS 2
+
 #define DEFAULT 0 // Colemak-DH
 #define QWE 1
 #define NUM 2
@@ -96,7 +101,7 @@ MAKE_HRM(hml, KEYS_R THUMBS)
 MAKE_HRM(hmr, KEYS_L THUMBS)
 
 // MacOS Specific HomeRow
-#if HOST_OS == 2
+#if HOST_OS == MACOS
        #define HML_0 LGUI
        #define HML_1 LALT
        #define HML_2 LSHFT
@@ -162,7 +167,7 @@ ZMK_AUTO_LAYER(num_word,
 // -----------------------------------------------------------------------------------------
 
 // Cmd+Tab swapper, requires tri-state module.
-#if HOST_OS == 2 // MacOS
+#if HOST_OS == MACOS
     ZMK_TRI_STATE(swapper, bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
                   // For Q SHIFT-TAB LEFT DOWN UP RIGHT and LCLK for mouse
                   ignored-key-positions = <LT4 LT3 RM0 RM1 RM2 RM3 RH1>;)
@@ -171,7 +176,7 @@ ZMK_AUTO_LAYER(num_word,
 // Alt+Tab swapper
     ZMK_TRI_STATE(swapper, bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
                   ignored-key-positions = <LT2 RT2 RM1 RM2 RM3>;)
-    #if HOST_OS == 1 // Linux
+    #if HOST_OS == LINUX
         #define SWAPQUIT &kp Q
     #else // Windows
         #define SWAPQUIT &kp DEL
@@ -225,7 +230,7 @@ ZMK_HOLD_TAP(ht_end, bindings = <&masked_end>, <&kp>; MT_CORE)
 #define NAV_LEFT &ht_home 0 LEFT
 #define NAV_RIGHT &ht_end 0 RIGHT
 
-#if HOST_OS == 2 // MacOS
+#if HOST_OS == MACOS
     // Mask CMD on left/right hold to avoid accidental jumps to start/end of doc.
     MASK_MODS(masked_home, (MOD_LGUI), &kp LG(LEFT))
     MASK_MODS(masked_end,  (MOD_LGUI), &kp LG(RIGHT))
