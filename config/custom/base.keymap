@@ -307,11 +307,13 @@ ZMK_BASE_LAYER(MED,
 
 ZMK_BASE_LAYER(MSE,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      BT_CLA_       BT_CLR_       BT_PRV_       BT_NXT_       BT_TOG_   ,  &msc MOVE_LEFT &msc MOVE_DOWN &msc MOVE_UP &msc MOVE_RIGHT   ___     ,
+//    BT_CLA_       BT_CLR_       BT_PRV_       BT_NXT_       BT_TOG_   ,  &msc MOVE_LEFT &msc MOVE_DOWN &msc MOVE_UP &msc MOVE_RIGHT   ___     ,
+      ___ ___ ___ ___ ___   ,  &msc MOVE_LEFT &msc MOVE_DOWN &msc MOVE_UP &msc MOVE_RIGHT   ___     ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
  	 &kp HML_3     &kp HML_2     &kp HML_1     &kp HML_0        ___     ,  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT   ___     ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       BT_3           BT_2         BT_1           BT_0          BT_4    ,    &mkp MB4      &kp PG_DN     &kp PG_UP     &mkp MB5         ___     ,
+//     BT_3           BT_2         BT_1           BT_0          BT_4    ,    &mkp MB4      &kp PG_DN     &kp PG_UP     &mkp MB5         ___     ,
+       ___ ___ ___ ___ ___    ,    &mkp MB4      &kp PG_DN     &kp PG_UP     &mkp MB5         ___     ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                                &tog MSE     &mkp MCLK   ,    &mkp RCLK     &mkp LCLK
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
