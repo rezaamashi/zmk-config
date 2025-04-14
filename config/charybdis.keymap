@@ -1,5 +1,13 @@
 #define CONFIG_WIRELESS
 #define HOST_OS 2 // macos
+#define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)                   \
+    ZMK_LAYER(                                                                 \
+        name,                                                                  \
+                 LT RT                                                         \
+                 LM RM                                                         \
+                 LB RB                                                         \
+             XXX LH RH
+    )
 
 #include "custom/key-labels/35-l.h"
 #include "custom/base.keymap"
