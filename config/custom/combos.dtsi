@@ -19,17 +19,17 @@
 #endif
 
 
-ZMK_COMBO(colon_w,    &mcr_colon_w,  LT3 LT2, DEFAULT QWE,      COMBO_TERM, COMBO_IDLE)
-ZMK_COMBO(esc,        &kp ESC,       RM1 RM2, DEFAULT QWE NAV,  COMBO_TERM, COMBO_IDLE)
+ZMK_COMBO(colon_w,           &mcr_colon_w,  LT3 LT2, DEFAULT QWE,      COMBO_TERM, COMBO_IDLE)
+ZMK_COMBO(esc,               &kp ESC,       RM1 RM2, DEFAULT QWE NAV,  COMBO_TERM, COMBO_IDLE)
 
-ZMK_COMBO(ctrl_g,     &kp LC(G),     RB1 RB2, DEFAULT QWE,      COMBO_TERM, COMBO_IDLE)
+ZMK_COMBO(ctrl_g,            &kp LC(G),     RB1 RB2, DEFAULT QWE,      COMBO_TERM, COMBO_IDLE)
 
-ZMK_COMBO(del,        &kp DEL,       LH1 LH0, DEFAULT QWE,      COMBO_TERM, COMBO_IDLE)
-ZMK_COMBO(repeat,     &key_repeat,   RH0 RH1, ALL,              COMBO_TERM, COMBO_IDLE)
+ZMK_COMBO(del,               &kp DEL,       LH1 LH0, DEFAULT QWE,      COMBO_TERM, COMBO_IDLE)
+ZMK_COMBO(repeat,            &key_repeat,   RH0 RH1, ALL,              COMBO_TERM, COMBO_IDLE)
 
-ZMK_COMBO(tog_qwerty, &tog QWE,      LB4 LB3, DEFAULT QWE,      COMBO_TERM, COMBO_IDLE)
-ZMK_COMBO(tog_mse,    &tog MSE,      LT2 LT1, DEFAULT QWE MSE,  COMBO_TERM, COMBO_IDLE)
-ZMK_COMBO(esc_mse,    &tog MSE,      RM1 RM2, MSE,              COMBO_TERM, COMBO_IDLE)
+ZMK_COMBO(tog_qwerty,        &tog QWE,      LB4 LB3, DEFAULT QWE,      COMBO_TERM, COMBO_IDLE)
+ZMK_COMBO(tog_mse,           &tog MSE,      LT2 LT1, DEFAULT QWE MSE,  COMBO_TERM, COMBO_IDLE)
+ZMK_COMBO(esc_mse,           &tog MSE,      RM1 RM2, MSE,              COMBO_TERM, COMBO_IDLE)
 
-ZMK_COMBO(nav_word,   &nav_word NAV, LM2 LM1, DEFAULT QWE,      COMBO_TERM, COMBO_IDLE)
-ZMK_COMBO(num_word,   &num_word NUM, RT1 RT2, DEFAULT QWE,      COMBO_TERM, COMBO_IDLE)
+ZMK_COMBO(nav_word,          &nav_word NAV, LM2 LM1, DEFAULT QWE,      COMBO_TERM, COMBO_IDLE)
+ZMK_COMBO(esc_auto_layer,    CANCEL,        RM1 RM2, NAV NUM SYM,      COMBO_TERM, COMBO_IDLE)
