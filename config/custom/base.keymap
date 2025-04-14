@@ -158,7 +158,8 @@ ZMK_AUTO_LAYER(num_word,
 // Cmd+Tab swapper, requires tri-state module.
 #if HOST_OS == 2 // MacOS
     ZMK_TRI_STATE(swapper, bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
-                  ignored-key-positions = <LT2 RT2 RM1 RM2 RM3>;)
+                  // For Q SHIFT-TAB LEFT DOWN UP RIGHT
+                  ignored-key-positions = <LT4 LT3 RM0 RM1 RM2 RM3>;)
     #define SWAPQUIT &kp Q
 #else
 // Alt+Tab swapper
