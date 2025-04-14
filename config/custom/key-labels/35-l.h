@@ -53,7 +53,7 @@
 #define RB4 29
 
 #define LH0 32  // left thumb keys
-#define LH2 31
+#define LH1 31
 #define LH2 30
 
 #define RH0 33  // right thumb keys
