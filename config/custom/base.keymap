@@ -139,6 +139,8 @@ ZMK_ADAPTIVE_KEY(
         strict-modifiers;
 };)
 
+SIMPLE_MORPH(u_caps_word, SFT, &caps_word, &kp CAPS)
+
 // Tap: num-word | Double-tap: sticky sym-layer | Hold: num-layer
 #define SMART_NUM &smart_num NUM 0
 ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
@@ -189,8 +191,6 @@ ZMK_AUTO_LAYER(nav_word,
     continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP>;
     ignore-modifiers;
 )
-
-SIMPLE_MORPH(u_caps_word, SFT, &caps_word, &kp CAPS)
 
 // Tap: spc | Shift + tap: dot -> spc -> sticky shift (sentence) | Hold: nav-layer
 ZMK_HOLD_TAP(lt_spc, bindings = <&mo>, <&spc_morph>; flavor = "balanced";
