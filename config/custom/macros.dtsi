@@ -1,7 +1,1 @@
-ZMK_MACRO(
-    mcr_colon_w,
-    bindings = <&kp ESC
-                &kp COLON
-                &kp W
-                &kp RET>;
-)
+ZMK_MACRO(mcr_colon_w, bindings = <&kp ESC &kp COLON &kp W &kp RET>;)
