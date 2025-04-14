@@ -141,11 +141,11 @@ ZMK_ADAPTIVE_KEY(
 
 SIMPLE_MORPH(u_caps_word, SFT, &caps_word, &kp CAPS)
 
-// Tap: num-word | Double-tap: sticky sym-layer | Hold: num-layer
-#define SMART_NUM &smart_num NUM 0
+// Tap: sticky num-layer | Double-tap: num-word | Hold: sym-layer
+#define SMART_NUM &smart_num SYM 0
 ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
-ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl SYM>;
+ZMK_TAP_DANCE(num_dance, bindings = <&sl NUM>, <&num_word NUM>;
               tapping-term-ms = <200>;)
 ZMK_AUTO_LAYER(num_word,
     continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
