@@ -51,7 +51,7 @@
 
 #define QUICK_TAP_MS 175
 
-#ifdef HOST_OS 2
+#if HOST_OS == 2
        #define CTRLORCMD LG
        #define CTRLORALT LA
 #else
@@ -101,7 +101,7 @@ MAKE_HRM(hml, KEYS_R THUMBS)
 MAKE_HRM(hmr, KEYS_L THUMBS)
 
 // MacOS Specific HomeRow
-#ifdef HOST_OS 2
+#if HOST_OS == 2
        #define HML_0 LGUI
        #define HML_1 LALT
        #define HML_2 LSHFT
