@@ -54,7 +54,7 @@
        #define CTRLORCMD LG
        #define CTRLORALT LA
 #else
-       #define CTRLCMD LC
+       #define CTRLORCMD LC
        #define CTRLORALT LC
 #endif
 
