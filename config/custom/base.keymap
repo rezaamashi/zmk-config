@@ -279,11 +279,14 @@ ZMK_BASE_LAYER(SYM,
 
 ZMK_BASE_LAYER(NAV,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-	 &kp K_PWR    &kp K_LOCK        ___       &kp K_PASTE       ___     ,       ___         NAV_BSPC      NAV_DEL      &kp K_COPY    &kp SYSREQ ,
+//	 &kp K_PWR    &kp K_LOCK        ___       &kp K_PASTE       ___     ,       ___         NAV_BSPC      NAV_DEL      &kp K_COPY    &kp SYSREQ ,
+	 &kp K_PWR    &kp K_LOCK        ___       &kp K_PASTE       ___     ,       ___         &kp BSPC      &kp DEL      &kp K_COPY    &kp SYSREQ ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-	 &sk HML_3     &sk HML_2     &sk HML_1     &sk HML_0     &kp SLCK   ,     NAV_LEFT      &kp DOWN      &kp UP       NAV_RIGHT    &u_caps_word,
+//	 &sk HML_3     &sk HML_2     &sk HML_1     &sk HML_0     &kp SLCK   ,     NAV_LEFT      &kp DOWN      &kp UP       NAV_RIGHT    &u_caps_word,
+	 &sk HML_3     &sk HML_2     &sk HML_1     &sk HML_0     &kp SLCK   ,     &kp LEFT      &kp DOWN      &kp UP       &kp RIGHT    &u_caps_word,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-	 &kp PSCRN  &kp PAUSE_BREAK     ___        &kp K_CUT        ___     ,   &kp K_UNDO     NAV_PG_DN     NAV_PG_UP     &kp K_REDO     &kp INS   ,
+//	 &kp PSCRN  &kp PAUSE_BREAK     ___        &kp K_CUT        ___     ,   &kp K_UNDO     NAV_PG_DN     NAV_PG_UP     &kp K_REDO     &kp INS   ,
+	 &kp PSCRN  &kp PAUSE_BREAK     ___        &kp K_CUT        ___     ,   &kp K_UNDO     &kp PG_DN     &kp PG_UP     &kp K_REDO     &kp INS   ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                                   ___           ___     ,    &kp K_APP       CANCEL
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
