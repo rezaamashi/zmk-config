@@ -139,11 +139,11 @@ ZMK_ADAPTIVE_KEY(
         strict-modifiers;
 };)
 
-// Tap: num-word | Double-tap: sticky num-layer | Hold: num-layer
+// Tap: num-word | Double-tap: sticky num-layer | Hold: sym-layer
 #define SMART_NUM &smart_num NUM 0
 ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
              tapping-term-ms = <200>; quick-tap-ms = <QUICK_TAP_MS>;)
-ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
+ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl SYM>;
               tapping-term-ms = <200>;)
 ZMK_AUTO_LAYER(num_word,
     continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
@@ -261,7 +261,7 @@ ZMK_BASE_LAYER(NUM,
 	&kp GRAVE       &kp N1       &kp N2         &kp N3       &kp BSLH   ,    &kp NUHS      &kp BSPC        ___            ___           ___     ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
 //                                          |             |      -      | |             |             |
-	                                            &kp N0       &kp MINUS  ,       ___            ___
+	                                            &kp N0       &kp MINUS  ,       ___          CANCEL
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
