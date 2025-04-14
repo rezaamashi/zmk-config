@@ -191,11 +191,11 @@ ZMK_MACRO(dot_spc, bindings = <&kp DOT &kp SPACE &sk LSHFT>; wait-ms = <0>;
 
 &mt { MT_CORE };
 
-ZMK_HOLD_TAP(mt_home, bindings = <&masked_home>, <&kp>; MT_CORE)
-ZMK_HOLD_TAP(mt_end, bindings = <&masked_end>, <&kp>; MT_CORE)
+ZMK_HOLD_TAP(mt_home, bindings = <&masked_home>, <&kp LEFT>; MT_CORE)
+ZMK_HOLD_TAP(mt_end, bindings = <&masked_end>, <&kp RIGHT>; MT_CORE)
 
-#define NAV_LEFT &mt_home 0 LEFT
-#define NAV_RIGHT &mt_end 0 RIGHT
+#define NAV_LEFT &mt_home
+#define NAV_RIGHT &mt_end
 #define NAV_PG_UP &mt CTRLORCMD(HOME) PG_UP
 #define NAV_PG_DOWN &mt CTRLORCMD(END) PG_DN
 #define NAV_BSPC &mt CTRLORALT(BSPC) BSPC
