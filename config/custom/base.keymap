@@ -50,14 +50,6 @@
 
 #define QUICK_TAP_MS 175
 
-#if HOST_OS == 2
-       #define CTRLORCMD LG
-       #define CTRLORALT LA
-#else
-       #define CTRLORCMD LC
-       #define CTRLORALT LC
-#endif
-
 #define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2)         \
     ZMK_MOD_MORPH(NAME, mods = <(MOD_L##MOD|MOD_R##MOD)>;   \
                   bindings = <BINDING1>, <BINDING2>;)
@@ -190,22 +182,34 @@ ZMK_MACRO(dot_spc, bindings = <&kp DOT &kp SPACE &sk LSHFT>; wait-ms = <0>;
 
 &mt { MT_CORE };
 
-ZMK_HOLD_TAP(mt_home, bindings = <&masked_home>, <&kp>; MT_CORE)
-ZMK_HOLD_TAP(mt_end, bindings = <&masked_end>, <&kp>; MT_CORE)
+ZMK_HOLD_TAP(ht_home, bindings = <&masked_home>, <&kp>; MT_CORE)
+ZMK_HOLD_TAP(ht_end, bindings = <&masked_end>, <&kp>; MT_CORE)
 
-#define NAV_LEFT &mt_home 0 LEFT
-#define NAV_RIGHT &mt_end 0 RIGHT
-#define NAV_PG_UP &mt CTRLORCMD##(HOME) PG_UP
-#define NAV_PG_DOWN &mt CTRLORCMD##(END) PG_DN
-#define NAV_BSPC &mt CTRLORALT##(BSPC) BSPC
-#define NAV_DEL &mt CTRLORALT##(DEL) DEL
-
-// Mask CTRL on left/right hold to avoid accidental jumps to start/end of doc.
 #define MASK_MODS(NAME, MODS, BINDING)                                         \
-  ZMK_MOD_MORPH(NAME, bindings = <BINDING>, <BINDING>; mods = <MODS>;)
+    ZMK_MOD_MORPH(NAME, bindings = <BINDING>, <BINDING>; mods = <MODS>;)
 
-MASK_MODS(masked_home, (MOD_LCTL), &kp HOME)
-MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
+#define NAV_LEFT &ht_home 0 LEFT
+#define NAV_RIGHT &ht_end 0 RIGHT
+
+#if HOST_OS == 2 // MacOS
+    // Mask CMD on left/right hold to avoid accidental jumps to start/end of doc.
+    MASK_MODS(masked_home, (MOD_LGUI), &kp LG(LEFT))
+    MASK_MODS(masked_end,  (MOD_LGUI), &kp LG(RIGHT))
+
+    #define NAV_PG_UP &mt LG(UP) PG_UP
+    #define NAV_PG_DN &mt LG(DOWN) PG_DN
+    #define NAV_BSPC &mt LA(BSPC) BSPC
+    #define NAV_DEL &mt LA(DEL) DEL
+#else
+    // Mask CTRL on left/right hold to avoid accidental jumps to start/end of doc.
+    MASK_MODS(masked_home, (MOD_LCTL), &kp HOME)
+    MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
+
+    #define NAV_PG_UP &mt LC(HOME) PG_UP
+    #define NAV_PG_DN &mt LC(END) PG_DN
+    #define NAV_BSPC &mt LC(BSPC) BSPC
+    #define NAV_DEL &mt LC(DEL) DEL
+#endif
 
 // -----------------------------------------------------------------------------------------
 // Keymap
