@@ -9,22 +9,22 @@
        #define BT_2 &bt BT_SEL 2
        #define BT_3 &bt BT_SEL 3
        #define BT_4 &bt BT_SEL 4
-       #define BT_NXT_ &bt BT_NXT
-       #define BT_PRV_ &bt BT_PRV
-       #define BT_CLR_ &bt BT_CLR
-       #define BT_CLA_ &bt BT_CLR_ALL
-       #define BT_TOG_ &bt BT_OUT_TOG
+       #define _BT_NXT_ &bt BT_NXT
+       #define _BT_PRV_ &bt BT_PRV
+       #define _BT_CLR_ &bt BT_CLR
+       #define _BT_CLA_ &bt BT_CLR_ALL
+       #define _BT_TOG_ &bt BT_OUT_TOG
 #else
        #define BT_0 &trans
        #define BT_1 &trans
        #define BT_2 &trans
        #define BT_3 &trans
        #define BT_4 &trans
-       #define BT_NXT_ &trans
-       #define BT_PRV_ &trans
-       #define BT_CLR_ &trans
-       #define BT_CLA_ &trans
-       #define BT_TOG_ &trans
+       #define _BT_NXT_ &trans
+       #define _BT_PRV_ &trans
+       #define _BT_CLR_ &trans
+       #define _BT_CLA_ &trans
+       #define _BT_TOG_ &trans
 #endif
 
 #include <dt-bindings/zmk/pointing.h>
@@ -307,13 +307,11 @@ ZMK_BASE_LAYER(MED,
 
 ZMK_BASE_LAYER(MSE,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-//    BT_CLA_       BT_CLR_       BT_PRV_       BT_NXT_       BT_TOG_   ,  &msc MOVE_LEFT &msc MOVE_DOWN &msc MOVE_UP &msc MOVE_RIGHT   ___     ,
-      ___ ___ ___ ___ ___   ,  &msc MOVE_LEFT &msc MOVE_DOWN &msc MOVE_UP &msc MOVE_RIGHT   ___     ,
+     _BT_CLA_      _BT_CLR_       _BT_PRV_      _BT_NXT_      _BT_TOG_  ,  &msc MOVE_LEFT &msc MOVE_DOWN &msc MOVE_UP &msc MOVE_RIGHT   ___     ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
  	 &kp HML_3     &kp HML_2     &kp HML_1     &kp HML_0        ___     ,  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT   ___     ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//     BT_3           BT_2         BT_1           BT_0          BT_4    ,    &mkp MB4      &kp PG_DN     &kp PG_UP     &mkp MB5         ___     ,
-       ___ ___ ___ ___ ___    ,    &mkp MB4      &kp PG_DN     &kp PG_UP     &mkp MB5         ___     ,
+       BT_3           BT_2         BT_1           BT_0          BT_4    ,    &mkp MB4      &kp PG_DN     &kp PG_UP     &mkp MB5         ___     ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                                &tog MSE     &mkp MCLK   ,    &mkp RCLK     &mkp LCLK
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
