@@ -148,8 +148,6 @@ ZMK_ADAPTIVE_KEY(
         strict-modifiers;
 };)
 
-SIMPLE_MORPH(u_caps_word, SFT, &caps_word, &kp CAPS)
-
 // Tap: sticky num-layer | Double-tap: num-word | Hold: sym-layer
 #define SMART_NUM &smart_num SYM 0
 ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
@@ -342,7 +340,7 @@ ZMK_BASE_LAYER(NAV,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
   	 SWAPQUIT     &kp LS(TAB)    &swapper        PASTE       &kp K_PWR  ,       ___        NAV_PG_DN     NAV_PG_UP       COPY        &kp SYSREQ ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-  	 &sk HML_3     &sk HML_2     &sk HML_1     &sk HML_0     &kp SLCK   ,     NAV_LEFT      &kp DOWN      &kp UP       NAV_RIGHT    &u_caps_word,
+  	 &sk HML_3     &sk HML_2     &sk HML_1     &sk HML_0     &kp SLCK   ,     NAV_LEFT      &kp DOWN      &kp UP       NAV_RIGHT     &kp CAPS   ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
   	 &kp PSCRN       UNDO          REDO         CUTMOVE         ___     ,     &kp TAB       NAV_BSPC      NAV_DEL         ___         &kp INS   ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
