@@ -317,7 +317,7 @@ ZMK_BASE_LAYER(NUM,
 	&kp GRAVE       &kp N1       &kp N2         &kp N3       &kp BSLH   ,    &kp NUHS      NAV_BSPC       NAV_DEL       &td_dot         ___     ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
 //                                          |             |      -      | |             |             |
-	                                            &kp N0       &kp MINUS  ,      CANCEL     MAGIC_SHIFT
+	                                            &kp N0       &kp MINUS  ,    SMART_NUM    MAGIC_SHIFT
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
@@ -333,7 +333,7 @@ ZMK_BASE_LAYER(SYM,
 	&kp TILDE      &kp EXCL     &kp AT_SIGN    &kp HASH       &kp PIPE  ,     &kp NUHS     NAV_BSPC       NAV_DEL       &td_dot         ___     ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
 //                                          |      )      |      _      | |             |             |
-	                                           &kp RPAR      &kp UNDER  ,      CANCEL     MAGIC_SHIFT
+	                                           &kp RPAR      &kp UNDER  ,       ___       MAGIC_SHIFT
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
