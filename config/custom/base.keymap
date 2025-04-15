@@ -175,7 +175,7 @@ ZMK_AUTO_LAYER(num_word,
 #else
 // Alt+Tab swapper
     ZMK_TRI_STATE(swapper, bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-                  ignored-key-positions = <LT2 RT2 RM1 RM2 RM3>;)
+                  ignored-key-positions = <LT2 LT3 RM1 RM2 RM3>;)
     #if HOST_OS == LINUX
         #define SWAPQUIT &kp Q
     #else // Windows
