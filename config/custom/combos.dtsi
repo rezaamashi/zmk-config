@@ -25,7 +25,7 @@ ZMK_COMBO(ctrl_g,            &kp LC(G),     RB1 RB2, DEFAULT QWE,              C
 
 ZMK_COMBO(tog_qwerty,        &tog QWE,      LB4 LB3, DEFAULT QWE,              COMBO_TERM, COMBO_IDLE)
 
-ZMK_COMBO(mse,               &smart_mouse,  LT2 LT1, DEFAULT QWE NAV,          COMBO_TERM, COMBO_IDLE)
+ZMK_COMBO(mse,               &smart_mouse,  LT2 LT1, DEFAULT QWE NAV NUM,      COMBO_TERM, COMBO_IDLE)
 ZMK_COMBO(esc_mse,           &tog MSE,      RM1 RM2, MSE,                      COMBO_TERM, COMBO_IDLE)
 
 ZMK_COMBO(nav_word,          &nav_word NAV, LM2 LM1, DEFAULT QWE,              COMBO_TERM, COMBO_IDLE)
