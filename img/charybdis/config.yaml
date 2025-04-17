@@ -1,5 +1,5 @@
 parse_config:
-  layout: { dts_layout: ../../boards/shields/charybdis/charybdis_layout.dtsi }
+  layout: { dts_layout: charybdis_layout.dtsi }
 
   zmk_additional_includes: ["zmk-helpers/include"]
 
