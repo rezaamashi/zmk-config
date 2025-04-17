@@ -1,4 +1,8 @@
 parse_config:
+  zmk_keyboard: charybdis
+  zmk_shield: charybdis
+  zmk_physical_layout: charybdis_layout.dtsi
+
   zmk_additional_includes: ["zmk-helpers/include"]
 
   zmk_preamble: |
