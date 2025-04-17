@@ -1,0 +1,9 @@
+#define MAKE_TAP_DANCE(NAME, BINDING1, BINDING2) \
+    ZMK_TAP_DANCE(NAME, tapping-term-ms = <200>; \
+            bindings = <BINDING1>, <BINDING2>;)
+
+//MAKE_TAP_DANCE(td_bspc,    &lt NAV BSPC,   &kp CTRLORALT(BSPC))
+//MAKE_TAP_DANCE(td_del,     &kp DEL,        &kp LC(DEL))
+
+//MAKE_TAP_DANCE(td_semi,    &kp SEMI,       &kp SQT)
+MAKE_TAP_DANCE(td_dot,     &kp DOT,        &kp COMMA)
