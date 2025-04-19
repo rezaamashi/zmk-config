@@ -16,7 +16,7 @@ jobs:
     permissions:
       contents: write # allow workflow to commit to the repo
     with:
-      commit_message: "docs(draw): [${{ github.event.head_commit.message }}]"
+      commit_message: "docs(bot/draw): [${{ github.event.head_commit.message }}]"
       keymap_patterns: "config/charybdis.keymap" # path to the keymaps to parse
       config_path: "img/charybdis/config.yaml" # config file, ignored if not exists
       output_folder: "img/charybdis" # path to save produced SVG and keymap YAML files
