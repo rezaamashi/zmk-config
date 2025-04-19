@@ -8,6 +8,7 @@ parse_config:
   raw_binding_map:
     "&sys_reset": Reset
     "&bootloader": Boot
+    "&studio_unlock": Studio Unlock
     "&caps_word": Caps Word
     "&nav_word": Navword
 
