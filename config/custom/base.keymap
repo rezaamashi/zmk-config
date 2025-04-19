@@ -313,11 +313,11 @@ ZMK_BASE_LAYER(NUM,
 //|     '       |             |             |             |      =      | |             |             |             |             |             |
 	&kp SQT         &kp N4       &kp N5         &kp N6       &kp EQUAL  ,    &kp GLOBE     &kp HMR_0     &kp HMR_1     &kp HMR_2     &kp HMR_3  ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//|     `       |             |             |             |      \      | |   \ (nUS)   |             |             |             |             |
-	&kp GRAVE       &kp N1       &kp N2         &kp N3       &kp BSLH   ,    &kp NUHS      NAV_BSPC       NAV_DEL       &td_dot         ___     ,
+//|     `       |             |             |             |             | |      \      |             |             |             |             |
+	&kp GRAVE       &kp N1       &kp N2         &kp N3         &kp 0    ,    &kp BSLH      NAV_BSPC       NAV_DEL       &td_dot         ___     ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
 //                                          |             |      -      | |             |             |
-	                                            &kp N0       &kp MINUS  ,    SMART_NUM    MAGIC_SHIFT
+	                                         &lt_spc NAV 0   &kp MINUS  ,    SMART_NUM    MAGIC_SHIFT
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
@@ -327,13 +327,13 @@ ZMK_BASE_LAYER(SYM,
 	  &kp LBRC      &kp AMPS     &kp STAR       &kp LPAR      &kp RBRC  ,       ___           ___           ___     &kp PAUSE_BREAK  &kp COLON  ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //|     "       |      $      |      %      |      ^      |      +      | |             |             |             |             |             |
-	  &kp DQT      &kp DLLR     &kp PRCNT      &kp CARET     &kp PLUS   ,   &kp GLOBE     &kp HMR_0      &kp HMR_1     &kp HMR_2     &kp HMR_3  ,
+	  &kp DQT      &kp DLLR     &kp PRCNT      &kp CARET     &kp PLUS   ,    &kp GLOBE    &kp HMR_0      &kp HMR_1     &kp HMR_2     &kp HMR_3  ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-//|     ~       |      !      |      @      |      #      |      |      | |   \ (nUS)   |             |             |             |             |
-	&kp TILDE      &kp EXCL     &kp AT_SIGN    &kp HASH       &kp PIPE  ,     &kp NUHS     NAV_BSPC       NAV_DEL       &td_dot         ___     ,
+//|     ~       |      !      |      @      |      #      |      )      | |      |      |             |             |             |             |
+	&kp TILDE      &kp EXCL     &kp AT_SIGN    &kp HASH       &kp RPAR  ,     &kp PIPE     NAV_BSPC       NAV_DEL       &td_dot         ___     ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-//                                          |      )      |      _      | |             |             |
-	                                           &kp RPAR      &kp UNDER  ,       ___       MAGIC_SHIFT
+//                                          |             |      _      | |             |             |
+	                                         &lt_spc NAV 0   &kp UNDER  ,       ___       MAGIC_SHIFT
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
 
