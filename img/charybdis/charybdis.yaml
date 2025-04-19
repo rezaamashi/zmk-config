@@ -78,8 +78,8 @@ layers:
   - '8'
   - '9'
   - ']'
-  - LOCK
-  - PWR
+  - {type: trans}
+  - {type: trans}
   - {t: DHM, h: toggle}
   - {t: '1', h: toggle}
   - {type: trans}
@@ -97,14 +97,14 @@ layers:
   - '1'
   - '2'
   - '3'
+  - '0'
   - \
-  - '#'
   - {t: '$$mdi:backspace-outline$$', h: 'Alt+$$mdi:backspace-outline$$'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: 'Alt+$$mdi:backspace-reverse-outline$$'}
   - '&td_dot'
   - {type: trans}
   - ''
-  - '0'
+  - {t: SPC, h: '4', s: Sentence}
   - '-'
   - {t: Numword, h: '3', s: Sticky Num}
   - {t: Magic, h: Shift}
@@ -114,8 +114,8 @@ layers:
   - '*'
   - (
   - '}'
-  - LOCK
-  - PWR
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - PAUSE BREAK
   - ':'
@@ -133,14 +133,14 @@ layers:
   - '!'
   - '@'
   - '#'
+  - )
   - '|'
-  - '#'
   - {t: '$$mdi:backspace-outline$$', h: 'Alt+$$mdi:backspace-outline$$'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: 'Alt+$$mdi:backspace-reverse-outline$$'}
   - '&td_dot'
   - {type: trans}
   - ''
-  - )
+  - {t: SPC, h: '4', s: Sentence}
   - _
   - {type: held}
   - {t: Magic, h: Shift}
@@ -149,7 +149,7 @@ layers:
   - Prev Win
   - Next Win
   - Gui+V
-  - PWR
+  - {type: trans}
   - {type: trans}
   - {t: PgDn, h: Gui+↓}
   - {t: PgUp, h: Gui+↑}
