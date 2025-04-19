@@ -9,48 +9,40 @@ parse_config:
     "&sys_reset": Reset
     "&bootloader": Boot
     "&caps_word": Caps Word
+    "&nav_word": Navword
 
     "&bt BT_SEL 0": BT 1
     "&bt BT_SEL 1": BT 2
     "&bt BT_SEL 2": BT 3
     "&bt BT_SEL 3": BT 4
-
-    "&kp LC(INS)": Copy
-    "&kp LC(X)": Cut
-    "&kp LS(INS)": Paste
+    "&bt BT_SEL 4": BT 5
 
     "&swapper": Next Win
     "&kp LS(TAB)": Prev Win
     "&dot_spc": Sentence
     "&num_dance": { "t": "Numword", "s": "Sticky Num" }
     "&magic_shift": { "t": Magic, "h": "Shift" }
+    "&mcr_colon_w": ":W"
 
-    "&hml LS(LALT)TAB": Tab
-    "&hm_combo_ldr": Leader
-    "&hm_combo_ldrsh": Shift+Leader
-    "&hm_combo_lpar": { "t": "(", "right": "<" }
-    "&hm_combo_rpar": { "t": ")", "right": ">" }
-    "&kp LBKT": { "t": "[", "right": "{" }
-    "&kp RBKT": { "t": "]", "right": "}" }
-
-    "&mmv MOVE_UP": Mouse ↑
-    "&mmv MOVE_DOWN": Mouse ↓
-    "&mmv MOVE_LEFT": Mouse ←
-    "&mmv MOVE_RIGHT": Mouse →
+    "&mmv MOVE_UP": $$phosphor:regular/mouse$$ ↑
+    "&mmv MOVE_DOWN": $$phosphor:regular/mouse$$ ↓
+    "&mmv MOVE_LEFT": $$phosphor:regular/mouse$$ ←
+    "&mmv MOVE_RIGHT": $$phosphor:regular/mouse$$ →
 
     # Same as mmv since I enabled smooth scrolling
-    "&msc MOVE_UP": Scroll ↑
-    "&msc MOVE_DOWN": Scroll ↓
-    "&msc MOVE_LEFT": Scroll ←
-    "&msc MOVE_RIGHT": Scroll →
+    "&msc MOVE_UP": $$phosphor:regular/mouse-scroll$$ ↑
+    "&msc MOVE_DOWN": $$phosphor:regular/mouse-scroll$$ ↓
+    "&msc MOVE_LEFT": $$phosphor:regular/mouse-scroll$$ ←
+    "&msc MOVE_RIGHT": $$phosphor:regular/mouse-scroll$$ →
 
-    "&mkp LCLK": Left Click
-    "&mkp RCLK": Right Click
-    "&mkp MCLK": Middle Click
-    "&mkp MB4": Back Click
-    "&mkp MB5": Forward Click
+    "&mkp LCLK": $$phosphor:regular/mouse-left-click$$
+    "&mkp RCLK": $$phosphor:regular/mouse-right-click$$
+    "&mkp MCLK": $$phosphor:regular/mouse-middle-click$$
+    "&mkp MB4": $$mdi:page-previous-outline$$
+    "&mkp MB5": $$mdi:page-next-outline$$
 
   trans_legend: { "t": "", "type": "trans" }
+  none_legend: { "t": $$mdi:alpha-x-circle-outline$$ , "type": "none" }
 
   # zmk_combos:
   #   combo_cut: { align: bottom, o: 0.15 }
@@ -60,21 +52,27 @@ parse_config:
 
   zmk_keycode_map:
     # custom mappings
-    LALT: Alt
-    RALT: Alt
-    LCTRL: Ctrl
-    RCTRL: Ctrl
-    LGUI: Cmd
-    RGUI: Cmd
-    LSHFT: Shift
-    RSHFT: Shift
+    LALT: $$mdi:apple-keyboard-option$$
+    RALT: $$mdi:apple-keyboard-option$$
+    LCTRL: $$mdi:apple-keyboard-control$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    LGUI: $$mdi:apple-keyboard-command$$
+    RGUI: $$mdi:apple-keyboard-command$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    RSHFT: $$mdi:apple-keyboard-shift$$
 
-    BSPC: Bspc
-    DEL: Del
+    BSPC: $$mdi:backspace-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
     ESC: Esc
-    RET: Enter
-    SPACE: Spc
-    TAB: Tab
+    RET: $$mdi:keyboard-return$$
+    SPACE: $$mdi:keyboard-space$$
+    TAB: $$mdi:keyboard-tab$$
+
+    COPY: $$mdi:content-copy$$
+    CUT: $$mdi:content-cut$$
+    PASTE: $$mdi:content-paste$$
+    UNDO: $$mdi:undo$$
+    REDO: $$mdi:redo$$
 
     PG_UP: PgUp
     PG_DN: PgDn
