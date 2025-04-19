@@ -11,16 +11,16 @@ layers:
   - U
   - Y
   - ;
-  - {t: A, h: Ctrl}
-  - {t: R, h: Shift}
-  - {t: S, h: Alt}
-  - {t: T, h: Cmd}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: R, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-command$$'}
   - G
   - M
-  - {t: N, h: Cmd}
-  - {t: E, h: Alt}
-  - {t: I, h: Shift}
-  - {t: O, h: Ctrl}
+  - {t: N, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: O, h: '$$mdi:apple-keyboard-control$$'}
   - Z
   - X
   - C
@@ -33,7 +33,7 @@ layers:
   - /
   - ''
   - {t: SPC, h: '4', s: Sentence}
-  - {t: Enter, h: '5'}
+  - {t: '$$mdi:keyboard-return$$', h: '5'}
   - {t: Numword, h: '3', s: Sticky Num}
   - {t: Magic, h: Shift}
   '1':
@@ -47,16 +47,16 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: Ctrl}
-  - {t: S, h: Shift}
-  - {t: D, h: Alt}
-  - {t: F, h: Cmd}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
   - H
-  - {t: J, h: Cmd}
-  - {t: K, h: Alt}
-  - {t: L, h: Shift}
-  - {t: ;, h: Ctrl}
+  - {t: J, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$'}
   - Z
   - X
   - C
@@ -69,15 +69,15 @@ layers:
   - /
   - ''
   - {t: SPC, h: '4', s: Sentence}
-  - {t: Enter, h: '5'}
+  - {t: '$$mdi:keyboard-return$$', h: '5'}
   - {t: Numword, h: '3', s: Sticky Num}
   - {t: Magic, h: Shift}
   '2':
-  - {t: '[', right: '{'}
+  - '['
   - '7'
   - '8'
   - '9'
-  - {t: ']', right: '}'}
+  - ']'
   - LOCK
   - PWR
   - {t: DHM, h: toggle}
@@ -89,18 +89,18 @@ layers:
   - '6'
   - '='
   - GLOBE
-  - Cmd
-  - Alt
-  - Shift
-  - Ctrl
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - '`'
   - '1'
   - '2'
   - '3'
   - \
   - '#'
-  - {t: Bspc, h: Alt+Bspc}
-  - {t: Del, h: Alt+Del}
+  - {t: '$$mdi:backspace-outline$$', h: 'Alt+$$mdi:backspace-outline$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Alt+$$mdi:backspace-reverse-outline$$'}
   - '&td_dot'
   - {type: trans}
   - ''
@@ -125,18 +125,18 @@ layers:
   - ^
   - +
   - GLOBE
-  - Cmd
-  - Alt
-  - Shift
-  - Ctrl
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - '~'
   - '!'
   - '@'
   - '#'
   - '|'
   - '#'
-  - {t: Bspc, h: Alt+Bspc}
-  - {t: Del, h: Alt+Del}
+  - {t: '$$mdi:backspace-outline$$', h: 'Alt+$$mdi:backspace-outline$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Alt+$$mdi:backspace-reverse-outline$$'}
   - '&td_dot'
   - {type: trans}
   - ''
@@ -155,10 +155,10 @@ layers:
   - {t: PgUp, h: Gui+↑}
   - Gui+C
   - SYSREQ
-  - {t: Ctrl, h: sticky}
-  - {t: Shift, h: sticky}
-  - {t: Alt, h: sticky}
-  - {t: Cmd, h: sticky}
+  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-option$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-command$$', h: sticky}
   - SLCK
   - {t: ←, h: Gui+←}
   - ↓
@@ -170,9 +170,9 @@ layers:
   - Gui+Sft+Z
   - Gui+Alt+V
   - {type: trans}
-  - Tab
-  - {t: Bspc, h: Alt+Bspc}
-  - {t: Del, h: Alt+Del}
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:backspace-outline$$', h: 'Alt+$$mdi:backspace-outline$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Alt+$$mdi:backspace-reverse-outline$$'}
   - {type: trans}
   - Ins
   - ''
@@ -191,10 +191,10 @@ layers:
   - STOP
   - {type: trans}
   - Boot
-  - {t: '0', h: Ctrl}
-  - {t: F4, h: Shift}
-  - {t: F5, h: Alt}
-  - {t: F6, h: Cmd}
+  - {t: '0', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F4, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F5, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F6, h: '$$mdi:apple-keyboard-command$$'}
   - F11
   - $$mdi:skip-backward$$
   - $$mdi:volume-medium$$
@@ -222,39 +222,39 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - Back Click
+  - $$mdi:page-previous-outline$$
   - {t: PgDn, h: Gui+↓}
   - {t: PgUp, h: Gui+↑}
-  - Forward Click
+  - $$mdi:page-next-outline$$
   - {type: trans}
   - BT 4
   - BT 3
   - BT 2
   - BT 1
-  - {t: BT, h: '4'}
-  - Mouse ←
-  - Mouse ↓
-  - Mouse ↑
-  - Mouse →
+  - BT 5
+  - $$phosphor:regular/mouse$$ ←
+  - $$phosphor:regular/mouse$$ ↓
+  - $$phosphor:regular/mouse$$ ↑
+  - $$phosphor:regular/mouse$$ →
   - {type: trans}
   - BT CLR ALL
   - BT CLR
   - BT NXT
   - BT PRV
   - OUT TOG
-  - Scroll ←
-  - Scroll ↓
-  - Scroll ↑
-  - Scroll →
+  - $$phosphor:regular/mouse-scroll$$ ←
+  - $$phosphor:regular/mouse-scroll$$ ↓
+  - $$phosphor:regular/mouse-scroll$$ ↑
+  - $$phosphor:regular/mouse-scroll$$ →
   - {type: trans}
   - ''
   - {t: '6', h: toggle}
-  - Middle Click
-  - Right Click
-  - Left Click
+  - $$phosphor:regular/mouse-middle-click$$
+  - $$phosphor:regular/mouse-right-click$$
+  - $$phosphor:regular/mouse-left-click$$
 combos:
 - p: [1, 2]
-  k: '&mcr_colon_w'
+  k: :W
   l: [DHM, '1']
 - p: [16, 17]
   k: Esc
@@ -272,7 +272,7 @@ combos:
   k: {t: '6', h: toggle}
   l: ['6']
 - p: [12, 13]
-  k: '&nav_word 4'
+  k: Navword
   l: [DHM, '1']
 - p: [16, 17]
   k: CANCEL
