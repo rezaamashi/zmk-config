@@ -200,7 +200,7 @@ layers:
   - $$mdi:volume-medium$$
   - $$mdi:volume-high$$
   - $$mdi:skip-forward$$
-  - '&studio_unlock'
+  - Studio Unlock
   - Reset
   - F1
   - F2
