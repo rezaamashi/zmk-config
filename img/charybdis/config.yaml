@@ -24,16 +24,16 @@ parse_config:
     "&magic_shift": { "t": Magic, "h": "Shift" }
     "&mcr_colon_w": ":W"
 
-    "&mmv MOVE_UP": $$phosphor:regular/mouse$$ ↑
-    "&mmv MOVE_DOWN": $$phosphor:regular/mouse$$ ↓
-    "&mmv MOVE_LEFT": $$phosphor:regular/mouse$$ ←
-    "&mmv MOVE_RIGHT": $$phosphor:regular/mouse$$ →
+    "&mmv MOVE_UP": "$$phosphor:regular/mouse$$ ↑"
+    "&mmv MOVE_DOWN": "$$phosphor:regular/mouse$$ ↓"
+    "&mmv MOVE_LEFT": "$$phosphor:regular/mouse$$ ←"
+    "&mmv MOVE_RIGHT": "$$phosphor:regular/mouse$$ →"
 
     # Same as mmv since I enabled smooth scrolling
-    "&msc MOVE_UP": $$phosphor:regular/mouse-scroll$$ ↑
-    "&msc MOVE_DOWN": $$phosphor:regular/mouse-scroll$$ ↓
-    "&msc MOVE_LEFT": $$phosphor:regular/mouse-scroll$$ ←
-    "&msc MOVE_RIGHT": $$phosphor:regular/mouse-scroll$$ →
+    "&msc MOVE_UP": "$$phosphor:regular/mouse-scroll$$ ↑"
+    "&msc MOVE_DOWN": "$$phosphor:regular/mouse-scroll$$ ↓"
+    "&msc MOVE_LEFT": "$$phosphor:regular/mouse-scroll$$ ←"
+    "&msc MOVE_RIGHT": "$$phosphor:regular/mouse-scroll$$ →"
 
     "&mkp LCLK": $$phosphor:regular/mouse-left-click$$
     "&mkp RCLK": $$phosphor:regular/mouse-right-click$$
