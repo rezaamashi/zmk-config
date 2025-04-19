@@ -102,7 +102,7 @@ layers:
   - {t: '$$mdi:backspace-outline$$', h: 'Alt+$$mdi:backspace-outline$$'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: 'Alt+$$mdi:backspace-reverse-outline$$'}
   - '&td_dot'
-  - {type: trans}
+  - '?'
   - ''
   - {t: SPC, h: '4', s: Sentence}
   - '-'
