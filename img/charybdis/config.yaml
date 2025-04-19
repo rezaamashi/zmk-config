@@ -1,6 +1,4 @@
 parse_config:
-  layout: { dts_layout: charybdis_layout.dtsi }
-
   zmk_additional_includes: ["zmk-helpers/include"]
 
   zmk_preamble: |
