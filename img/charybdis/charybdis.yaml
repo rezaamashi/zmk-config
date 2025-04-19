@@ -232,20 +232,20 @@ layers:
   - BT 2
   - BT 1
   - BT 5
-  - $$phosphor:regular/mouse$$ ←
-  - $$phosphor:regular/mouse$$ ↓
-  - $$phosphor:regular/mouse$$ ↑
-  - $$phosphor:regular/mouse$$ →
+  - Mouse ←
+  - Mouse ↓
+  - Mouse ↑
+  - Mouse →
   - {type: trans}
   - BT CLR ALL
   - BT CLR
   - BT NXT
   - BT PRV
   - OUT TOG
-  - $$phosphor:regular/mouse-scroll$$ ←
-  - $$phosphor:regular/mouse-scroll$$ ↓
-  - $$phosphor:regular/mouse-scroll$$ ↑
-  - $$phosphor:regular/mouse-scroll$$ →
+  - Scroll ←
+  - Scroll ↓
+  - Scroll ↑
+  - Scroll →
   - {type: trans}
   - ''
   - {t: '6', h: toggle}
