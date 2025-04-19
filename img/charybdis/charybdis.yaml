@@ -1,0 +1,279 @@
+layout: {zmk_keyboard: charybdis}
+layers:
+  DHM:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: R, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-command$$'}
+  - G
+  - M
+  - {t: N, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: O, h: '$$mdi:apple-keyboard-control$$'}
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - /
+  - ''
+  - {t: SPC, h: '4', s: Sentence}
+  - {t: '$$mdi:keyboard-return$$', h: '5'}
+  - {t: Numword, h: '3', s: Sticky Num}
+  - {t: Magic, h: Shift}
+  '1':
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
+  - G
+  - H
+  - {t: J, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$'}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ''
+  - {t: SPC, h: '4', s: Sentence}
+  - {t: '$$mdi:keyboard-return$$', h: '5'}
+  - {t: Numword, h: '3', s: Sticky Num}
+  - {t: Magic, h: Shift}
+  '2':
+  - '['
+  - '7'
+  - '8'
+  - '9'
+  - ']'
+  - LOCK
+  - PWR
+  - {t: DHM, h: toggle}
+  - {t: '1', h: toggle}
+  - {type: trans}
+  - ''''
+  - '4'
+  - '5'
+  - '6'
+  - '='
+  - GLOBE
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - \
+  - '#'
+  - {t: '$$mdi:backspace-outline$$', h: 'Alt+$$mdi:backspace-outline$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Alt+$$mdi:backspace-reverse-outline$$'}
+  - '&td_dot'
+  - {type: trans}
+  - ''
+  - '0'
+  - '-'
+  - {t: Numword, h: '3', s: Sticky Num}
+  - {t: Magic, h: Shift}
+  '3':
+  - '{'
+  - '&'
+  - '*'
+  - (
+  - '}'
+  - LOCK
+  - PWR
+  - {type: trans}
+  - PAUSE BREAK
+  - ':'
+  - '"'
+  - $
+  - '%'
+  - ^
+  - +
+  - GLOBE
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - '~'
+  - '!'
+  - '@'
+  - '#'
+  - '|'
+  - '#'
+  - {t: '$$mdi:backspace-outline$$', h: 'Alt+$$mdi:backspace-outline$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Alt+$$mdi:backspace-reverse-outline$$'}
+  - '&td_dot'
+  - {type: trans}
+  - ''
+  - )
+  - _
+  - {type: held}
+  - {t: Magic, h: Shift}
+  '4':
+  - Q
+  - Prev Win
+  - Next Win
+  - Gui+V
+  - PWR
+  - {type: trans}
+  - {t: PgDn, h: Gui+↓}
+  - {t: PgUp, h: Gui+↑}
+  - Gui+C
+  - SYSREQ
+  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-option$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-command$$', h: sticky}
+  - SLCK
+  - {t: ←, h: Gui+←}
+  - ↓
+  - ↑
+  - {t: →, h: Gui+→}
+  - CAPS
+  - PSCRN
+  - Gui+Z
+  - Gui+Sft+Z
+  - Gui+Alt+V
+  - {type: trans}
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:backspace-outline$$', h: 'Alt+$$mdi:backspace-outline$$'}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Alt+$$mdi:backspace-reverse-outline$$'}
+  - {type: trans}
+  - Ins
+  - ''
+  - {type: held}
+  - {type: trans}
+  - APP
+  - {t: Magic, h: Shift}
+  '5':
+  - Boot
+  - F7
+  - F8
+  - F9
+  - F12
+  - PWR
+  - LOCK
+  - STOP
+  - {type: trans}
+  - Boot
+  - {t: '0', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F4, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F5, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F6, h: '$$mdi:apple-keyboard-command$$'}
+  - F11
+  - $$mdi:skip-backward$$
+  - $$mdi:volume-medium$$
+  - $$mdi:volume-high$$
+  - $$mdi:skip-forward$$
+  - '&studio_unlock'
+  - Reset
+  - F1
+  - F2
+  - F1
+  - F10
+  - PIP
+  - BRI DN
+  - BRI UP
+  - {type: trans}
+  - Reset
+  - ''
+  - {type: trans}
+  - {type: held}
+  - $$mdi:volume-off$$
+  - $$mdi:play-pause$$
+  '6':
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - $$mdi:page-previous-outline$$
+  - {t: PgDn, h: Gui+↓}
+  - {t: PgUp, h: Gui+↑}
+  - $$mdi:page-next-outline$$
+  - {type: trans}
+  - BT 4
+  - BT 3
+  - BT 2
+  - BT 1
+  - BT 5
+  - Mouse ←
+  - Mouse ↓
+  - Mouse ↑
+  - Mouse →
+  - {type: trans}
+  - BT CLR ALL
+  - BT CLR
+  - BT NXT
+  - BT PRV
+  - OUT TOG
+  - Scroll ←
+  - Scroll ↓
+  - Scroll ↑
+  - Scroll →
+  - {type: trans}
+  - ''
+  - {t: '6', h: toggle}
+  - $$phosphor:regular/mouse-middle-click$$
+  - $$phosphor:regular/mouse-right-click$$
+  - $$phosphor:regular/mouse-left-click$$
+combos:
+- p: [1, 2]
+  k: :W
+  l: [DHM, '1']
+- p: [16, 17]
+  k: Esc
+  l: [DHM, '1']
+- p: [26, 27]
+  k: Ctl+G
+  l: [DHM, '1']
+- p: [20, 21]
+  k: {t: '1', h: toggle}
+  l: [DHM, '1']
+- p: [2, 3]
+  k: {t: '6', h: toggle}
+  l: [DHM, '1', '4', '2']
+- p: [16, 17]
+  k: {t: '6', h: toggle}
+  l: ['6']
+- p: [12, 13]
+  k: Navword
+  l: [DHM, '1']
+- p: [16, 17]
+  k: CANCEL
+  l: ['4', '2', '3']
