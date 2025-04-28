@@ -222,36 +222,36 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - $$mdi:page-previous-outline$$
+  - {type: trans}
   - {t: PgDn, h: Gui+↓}
   - {t: PgUp, h: Gui+↑}
-  - $$mdi:page-next-outline$$
+  - {type: trans}
   - {type: trans}
   - BT 4
   - BT 3
   - BT 2
   - BT 1
   - BT 5
-  - Mouse ←
-  - Mouse ↓
-  - Mouse ↑
-  - Mouse →
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - BT CLR ALL
   - BT CLR
   - BT NXT
   - BT PRV
   - OUT TOG
-  - Scroll ←
-  - Scroll ↓
-  - Scroll ↑
-  - Scroll →
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - {type: trans}
   - ''
   - {t: '6', h: toggle}
-  - $$phosphor:regular/mouse-middle-click$$
-  - $$phosphor:regular/mouse-right-click$$
-  - $$phosphor:regular/mouse-left-click$$
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
 combos:
 - p: [1, 2]
   k: :W
