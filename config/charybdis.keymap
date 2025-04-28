@@ -1,6 +1,9 @@
 #define CONFIG_WIRELESS
-// #define CONFIG_MOUSE_EMULATION
 #define HOST_OS 2 // macos
+
+// #define CONFIG_MOUSE_EMULATION
+// #define CONFIG_SMOOTH_SCROLLING
+
 #define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)                   \
     ZMK_LAYER(                                                                 \
         name,                                                                  \

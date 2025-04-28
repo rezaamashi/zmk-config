@@ -40,10 +40,19 @@
         #define MSRI &mmv MOVE_RIGHT // Move Mouse Right
         #define MSLE &mmv MOVE_LEFT // Move Mouse Left
 
-        #define MSCDN &msc MOVE_DOWN // Scroll Down
-        #define MSCUP &msc MOVE_UP // Scroll Up
-        #define MSCRI &msc MOVE_RIGHT // Scroll Right
-        #define MSCLE &msc MOVE_LEFT Scroll Left
+        #ifdef CONFIG_SMOOTH_SCROLLING
+            // Read more on note section of
+            // https://zmk.dev/docs/keymaps/behaviors/mouse-emulation#examples-2
+            #define MSCDN &msc MOVE_DOWN // Scroll Down
+            #define MSCUP &msc MOVE_UP // Scroll Up
+            #define MSCRI &msc MOVE_RIGHT // Scroll Right
+            #define MSCLE &msc MOVE_LEFT Scroll Left
+        #else
+            #define MSCDN &msc SCRL_DOWN // Scroll Down
+            #define MSCUP &msc SCRL_UP // Scroll Up
+            #define MSCRI &msc SCRL_RIGHT // Scroll Right
+            #define MSCLE &msc SCRL_LEFT Scroll Left
+        #endif
 #else
         #define MLCLK &trans
         #define MRCLK &trans
