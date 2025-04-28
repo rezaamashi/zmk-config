@@ -27,7 +27,38 @@
        #define BT_TOG_ &trans
 #endif
 
-#include <dt-bindings/zmk/pointing.h>
+#ifdef CONFIG_MOUSE_EMULATION
+    #include <dt-bindings/zmk/pointing.h>
+        #define MLCLK &mkp LCLK // Left Click
+        #define MRCLK &mkp RCLK // Right Click
+        #define MDCLK &mkp MCLK // Middle Click
+        #define MBCK &mkp MB4 // Backward
+        #define MFWD &mkp MB5 // Forward
+
+        #define MSDN &mmv MOVE_DOWN // Move Mouse Down
+        #define MSUP &mmv MOVE_UP // Move Mouse Up
+        #define MSRI &mmv MOVE_RIGHT // Move Mouse Right
+        #define MSLE &mmv MOVE_LEFT // Move Mouse Left
+
+        #define MSCDN &msc MOVE_DOWN // Scroll Down
+        #define MSCUP &msc MOVE_UP // Scroll Up
+        #define MSCRI &msc MOVE_RIGHT // Scroll Right
+        #define MSCLE &msc MOVE_LEFT Scroll Left
+#else
+        #define MLCLK &trans
+        #define MRCLK &trans
+        #define MDCLK &trans
+        #define MBCK &trans
+        #define MFWD &trans
+        #define MSDN &trans
+        #define MSUP &trans
+        #define MSRI &trans
+        #define MSLE &trans
+        #define MSCDN &trans
+        #define MSCUP &trans
+        #define MSCRI &trans
+        #define MSCLE &trans
+#endif
 
 #include "zmk-helpers/helper.h"
 
@@ -363,12 +394,12 @@ ZMK_BASE_LAYER(MED,
 
 ZMK_BASE_LAYER(MSE,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-  	    ___           ___          ___            ___           ___     ,    &mkp MB4      NAV_PG_DN     NAV_PG_UP     &mkp MB5         ___     ,
+  	    ___           ___          ___            ___           ___     ,       MBCK       NAV_PG_DN     NAV_PG_UP        MFWD          ___     ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-   &bt BT_SEL 3   &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0 &bt BT_SEL 4 ,  &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT   ___     ,
+   &bt BT_SEL 3   &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0 &bt BT_SEL 4 ,       MSLE          MSDN          MSUP          MSRI          ___     ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      BT_CLA_       BT_CLR_       BT_NXT_       BT_PRV_       BT_TOG_   ,  &msc MOVE_LEFT &msc MOVE_DOWN &msc MOVE_UP &msc MOVE_RIGHT   ___     ,
+      BT_CLA_       BT_CLR_       BT_NXT_       BT_PRV_       BT_TOG_   ,      MSCLE         MSCDN         MSCUP         MSCRI          ___     ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                               &tog MSE     &mkp MCLK   ,    &mkp RCLK     &mkp LCLK
+                                               &tog MSE        MDCLK    ,      MRCLK         MLCLK
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
