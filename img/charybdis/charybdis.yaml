@@ -83,10 +83,10 @@ layers:
   - {t: DHM, h: toggle}
   - {t: '1', h: toggle}
   - {type: trans}
-  - ''''
-  - '4'
-  - '5'
-  - '6'
+  - {t: '''', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '5', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '6', h: '$$mdi:apple-keyboard-command$$'}
   - '='
   - '-'
   - $$mdi:apple-keyboard-command$$
@@ -119,10 +119,10 @@ layers:
   - {type: trans}
   - PAUSE BREAK
   - ':'
-  - '"'
-  - $
-  - '%'
-  - ^
+  - {t: '"', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: $, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '%', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ^, h: '$$mdi:apple-keyboard-command$$'}
   - +
   - _
   - $$mdi:apple-keyboard-command$$
