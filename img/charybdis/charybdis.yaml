@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: charybdis}
 layers:
-  DHM:
+  '0':
   - Q
   - W
   - F
@@ -80,7 +80,7 @@ layers:
   - ']'
   - GLOBE
   - {type: trans}
-  - {t: DHM, h: toggle}
+  - {t: '0', h: toggle}
   - {t: '1', h: toggle}
   - {type: trans}
   - {t: '''', h: '$$mdi:apple-keyboard-control$$'}
@@ -255,25 +255,25 @@ layers:
 combos:
 - p: [1, 2]
   k: :W
-  l: [DHM, '1']
+  l: ['0', '1']
 - p: [16, 17]
   k: Esc
-  l: [DHM, '1']
+  l: ['0', '1']
 - p: [26, 27]
   k: Ctl+G
-  l: [DHM, '1']
+  l: ['0', '1']
 - p: [20, 21]
   k: {t: '1', h: toggle}
-  l: [DHM, '1']
+  l: ['0', '1']
 - p: [2, 3]
   k: {t: '6', h: toggle}
-  l: [DHM, '1', '4', '2']
+  l: ['0', '1', '4', '2']
 - p: [16, 17]
   k: {t: '6', h: toggle}
   l: ['6']
 - p: [12, 13]
   k: Navword
-  l: [DHM, '1']
+  l: ['0', '1']
 - p: [16, 17]
   k: CANCEL
   l: ['4', '2', '3']
