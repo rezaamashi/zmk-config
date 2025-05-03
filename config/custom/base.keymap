@@ -80,7 +80,7 @@
 #define LINUX 1
 #define MACOS 2
 
-#define DEFAULT 0 // Colemak-DH
+#define DHM 0 // Colemak-DH
 #define QWE 1
 #define NUM 2
 #define SYM 3
@@ -348,7 +348,7 @@ ZMK_BASE_LAYER(QWE,
 ZMK_BASE_LAYER(NUM,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 //|     [       |             |             |             |      ]      | |             |             |             |             |             |
-	&kp LBKT        &kp N7       &kp N8         &kp N9       &kp RBKT   ,    &kp GLOBE        ___       &to DEFAULT     &to QWE         ___     ,
+	&kp LBKT        &kp N7       &kp N8         &kp N9       &kp RBKT   ,    &kp GLOBE        ___         &to DHM       &to QWE         ___     ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //|     '       |             |             |             |      =      | |             |             |             |             |             |
   &hml HML_3 SQT &hml HML_2 N4 &hml HML_1 N5 &hml HML_0 N6   &kp EQUAL  ,    &kp MINUS     &kp HMR_0     &kp HMR_1     &kp HMR_2     &kp HMR_3  ,
