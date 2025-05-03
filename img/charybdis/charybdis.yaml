@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: charybdis}
 layers:
-  '0':
+  Dhm:
   - Q
   - W
   - F
@@ -32,11 +32,11 @@ layers:
   - .
   - /
   - ''
-  - {t: SPC, h: '4', s: Sentence}
-  - {t: '$$mdi:keyboard-return$$', h: '5'}
-  - {t: Numword, h: '3', s: Sticky Num}
+  - {t: SPC, h: Nav, s: Sentence}
+  - {t: '$$mdi:keyboard-return$$', h: Med}
+  - {t: Numword, h: Sym, s: Sticky Num}
   - {t: Magic, h: Shift}
-  '1':
+  Qwe:
   - Q
   - W
   - E
@@ -68,11 +68,11 @@ layers:
   - .
   - /
   - ''
-  - {t: SPC, h: '4', s: Sentence}
-  - {t: '$$mdi:keyboard-return$$', h: '5'}
-  - {t: Numword, h: '3', s: Sticky Num}
+  - {t: SPC, h: Nav, s: Sentence}
+  - {t: '$$mdi:keyboard-return$$', h: Med}
+  - {t: Numword, h: Sym, s: Sticky Num}
   - {t: Magic, h: Shift}
-  '2':
+  Num:
   - '['
   - '7'
   - '8'
@@ -80,8 +80,8 @@ layers:
   - ']'
   - GLOBE
   - {type: trans}
-  - {t: '0', h: toggle}
-  - {t: '1', h: toggle}
+  - {t: Dhm, h: toggle}
+  - {t: Qwe, h: toggle}
   - {type: trans}
   - {t: '''', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
@@ -104,11 +104,11 @@ layers:
   - '&td_dot'
   - {type: trans}
   - ''
-  - {t: SPC, h: '4', s: Sentence}
-  - {t: '$$mdi:keyboard-return$$', h: '5'}
-  - {t: Numword, h: '3', s: Sticky Num}
+  - {t: SPC, h: Nav, s: Sentence}
+  - {t: '$$mdi:keyboard-return$$', h: Med}
+  - {t: Numword, h: Sym, s: Sticky Num}
   - {t: Magic, h: Shift}
-  '3':
+  Sym:
   - '{'
   - '&'
   - '*'
@@ -140,11 +140,11 @@ layers:
   - '&td_dot'
   - '?'
   - ''
-  - {t: SPC, h: '4', s: Sentence}
-  - {t: '$$mdi:keyboard-return$$', h: '5'}
+  - {t: SPC, h: Nav, s: Sentence}
+  - {t: '$$mdi:keyboard-return$$', h: Med}
   - {type: held}
   - {t: Magic, h: Shift}
-  '4':
+  Nav:
   - Q
   - Prev Win
   - Next Win
@@ -180,7 +180,7 @@ layers:
   - {type: trans}
   - APP
   - {t: Magic, h: Shift}
-  '5':
+  Med:
   - Boot
   - F7
   - F8
@@ -216,7 +216,7 @@ layers:
   - {type: held}
   - $$mdi:volume-off$$
   - $$mdi:play-pause$$
-  '6':
+  Mse:
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -248,32 +248,32 @@ layers:
   - {type: trans}
   - {type: trans}
   - ''
-  - {t: '6', h: toggle}
+  - {t: Mse, h: toggle}
   - {type: trans}
   - {type: trans}
   - {type: trans}
 combos:
 - p: [1, 2]
   k: :W
-  l: ['0', '1']
+  l: [Dhm, Qwe]
 - p: [16, 17]
   k: Esc
-  l: ['0', '1']
+  l: [Dhm, Qwe]
 - p: [26, 27]
   k: Ctl+G
-  l: ['0', '1']
+  l: [Dhm, Qwe]
 - p: [20, 21]
-  k: {t: '1', h: toggle}
-  l: ['0', '1']
+  k: {t: Qwe, h: toggle}
+  l: [Dhm, Qwe]
 - p: [2, 3]
-  k: {t: '6', h: toggle}
-  l: ['0', '1', '4', '2']
+  k: {t: Mse, h: toggle}
+  l: [Dhm, Qwe, Nav, Num]
 - p: [16, 17]
-  k: {t: '6', h: toggle}
-  l: ['6']
+  k: {t: Mse, h: toggle}
+  l: [Mse]
 - p: [12, 13]
   k: Navword
-  l: ['0', '1']
+  l: [Dhm, Qwe]
 - p: [16, 17]
   k: CANCEL
-  l: ['4', '2', '3']
+  l: [Nav, Num, Sym]
