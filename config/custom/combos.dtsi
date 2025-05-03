@@ -18,17 +18,17 @@
     #define COMBO_IDLE 50
 #endif
 
-ZMK_COMBO(colon_w,           &mcr_colon_w,  LT3 LT2, DEFAULT QWE,              COMBO_TERM, COMBO_IDLE)
-ZMK_COMBO(esc,               &kp ESC,       RM1 RM2, DEFAULT QWE,              COMBO_TERM, COMBO_IDLE)
+ZMK_COMBO(colon_w,           &mcr_colon_w,  LT3 LT2, DHM QWE,              COMBO_TERM, COMBO_IDLE)
+ZMK_COMBO(esc,               &kp ESC,       RM1 RM2, DHM QWE,              COMBO_TERM, COMBO_IDLE)
 
-ZMK_COMBO(ctrl_g,            &kp LC(G),     RB1 RB2, DEFAULT QWE,              COMBO_TERM, COMBO_IDLE)
+ZMK_COMBO(ctrl_g,            &kp LC(G),     RB1 RB2, DHM QWE,              COMBO_TERM, COMBO_IDLE)
 
-ZMK_COMBO(tog_qwerty,        &tog QWE,      LB4 LB3, DEFAULT QWE,              COMBO_TERM, COMBO_IDLE)
+ZMK_COMBO(tog_qwerty,        &tog QWE,      LB4 LB3, DHM QWE,              COMBO_TERM, COMBO_IDLE)
 
-//ZMK_COMBO(mse,               &smart_mouse,  LT2 LT1, DEFAULT QWE NAV NUM,      COMBO_TERM, COMBO_IDLE)
-ZMK_COMBO(mse,               &tog MSE,      LT2 LT1, DEFAULT QWE NAV NUM,      COMBO_TERM, COMBO_IDLE)
+//ZMK_COMBO(mse,               &smart_mouse,  LT2 LT1, DHM QWE NAV NUM,      COMBO_TERM, COMBO_IDLE)
+ZMK_COMBO(mse,               &tog MSE,      LT2 LT1, DHM QWE NAV NUM,      COMBO_TERM, COMBO_IDLE)
 ZMK_COMBO(esc_mse,           &tog MSE,      RM1 RM2, MSE,                      COMBO_TERM, COMBO_IDLE)
 
-ZMK_COMBO(nav_word,          &nav_word NAV, LM2 LM1, DEFAULT QWE,              COMBO_TERM, COMBO_IDLE)
+ZMK_COMBO(nav_word,          &nav_word NAV, LM2 LM1, DHM QWE,              COMBO_TERM, COMBO_IDLE)
 
 ZMK_COMBO(esc_auto_layer,    CANCEL,        RM1 RM2, NAV NUM SYM,              COMBO_TERM, COMBO_IDLE)
