@@ -78,10 +78,10 @@ layers:
   - '8'
   - '9'
   - ']'
-  - GLOBE
-  - {type: trans}
-  - {t: Dhm, h: toggle}
   - {t: Qwe, h: toggle}
+  - BT 1
+  - BT 2
+  - BT 3
   - {type: trans}
   - {t: '''', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
