@@ -1,7 +1,7 @@
 #+title: Reza's ZMK Configuration
 
 * Overview
-Colemak-DH 34 key split keyboard with a lot of ease of use customization. Jump to [[*Keymap][Keymap]].
+Colemak-DH 34 key split keyboard with a lot of ease of use customization.
 
 * List of Modules
 - [[https://github.com/urob/zmk-helpers][urob/zmk-helpers]]
