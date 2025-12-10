@@ -1,40 +1,14 @@
 #+title: Reza's ZMK Configuration
 
-
 * Overview
-* Notes
+Colemak-DH 34 key split keyboard with a lot of ease of use customization
 
-** DONE Set up Mod Morph for Backspace and Backward Kill Word
-   CLOSED: [2024-01-27 Sat 21:36]
-Decided to use tap dance for the invocation
-** DONE Set up Combo to enter the layer
-   CLOSED: [2024-01-27 Sat 20:54]
-** DONE Set up tap dance for dot and key_repeat
-   CLOSED: [2024-01-27 Sat 19:45]
-** DONE Learn more on binding-cells
-   CLOSED: [2024-01-30 Tue 07:41]
-There is a preconfigured choice of settings that is relegated to picking which "version" of a feature is used. Gotta need to check the documentation to check which "version" is which.
-** DONE Try enabling experimental bluetooth
-   CLOSED: [2024-01-29 Mon 17:35]
-[[https://zmk.dev/docs/config/bluetooth][Bluetooth Configuration | ZMK Firmware]]
-** DONE conditional layer problem
-   CLOSED: [2024-02-10 Sat 17:05]
-   everything have  been going very well. in fact I am writing this with it rignt now. the only problem that I have right now is with the conditional layer.
-
-no longer experience any problem on this
-
-** DONE Check on how to nest multiple ~&~ in one key.
-   CLOSED: [2024-02-10 Sat 17:02]
-   for example nesting tap_dance BSPC and CTRL-BSPC within the long tap layer.
-
-   Tips from discord help forum to put the homerow ~&lt~ into the tap_dance
-
-** DONE Better Mac OS compatibility
-   CLOSED: [2024-07-26 Fri 16:27]
-   use ~C~ instead of ~K~ for some media keys
+* Keymap
+#+html: <img src="./img/charybdis/charybdis.svg">
 
 * Credits
 - @bastardkb
 - @petejohansson
 - @cwebster
 - @clae
+- @urob
