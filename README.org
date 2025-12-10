@@ -1,14 +1,20 @@
 #+title: Reza's ZMK Configuration
 
 * Overview
-Colemak-DH 34 key split keyboard with a lot of ease of use customization
+Colemak-DH 34 key split keyboard with a lot of ease of use customization. Jump to [[*Keymap][Keymap]].
+
+* List of Modules
+- [[https://github.com/urob/zmk-helpers][urob/zmk-helpers]]
+- [[https://github.com/urob/zmk-auto-layer][urob/zmk-auto-layer]]
+- [[https://github.com/urob/zmk-adaptive-key][urob/zmk-adaptive-key]]
+- [[https://github.com/urob/zmk-tri-state][urob/zmk-tri-state]]
 
 * Keymap
 #+html: <img src="./img/charybdis/charybdis.svg">
 
 * Credits
-- @bastardkb
-- @petejohansson
-- @cwebster
-- @clae
-- @urob
+- [[https://github.com/Bastardkb/Charybdis][@Bastardkb]]
+- [[https://github.com/petejohanson][@petejohansson]] and ZMK Maintainers
+- [[https://github.com/cwebster2/zmk-config][@cwebster2]]
+- [[https://elescia.wordpress.com/2022/02/27/handwired-wireless-skeletyl/2/][@clae]]
+- [[https://github.com/urob/zmk-config][@urob]]
