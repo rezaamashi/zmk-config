@@ -2,7 +2,7 @@ parse_config:
   zmk_additional_includes: ["zmk-helpers/include"]
 
   zmk_preamble: |
-    #include "custom/key-labels/35-l.h"
+    #include "<zmk-helpers/key-labels/34.h>"
     #define CONFIG_WIRELESS
 
   raw_binding_map:

@@ -10,8 +10,8 @@
                  LT RT                                                         \
                  LM RM                                                         \
                  LB RB                                                         \
-             XXX LH RH                                                         \
+                 LH RH                                                         \
     )
 
-#include "custom/key-labels/35-l.h"
+#include "<zmk-helpers/key-labels/34.h>"
 #include "custom/base.keymap"
