@@ -9,6 +9,7 @@ on:
       - "config/custom/key-labels/*.h"
       - "boards/shields/charybdis/charybdis_layout.dtsi"
       - "img/charybdis/config.yaml"
+      - ".github/workflows/draw-charybdis-keymaps.yml"
 
 jobs:
   draw:
