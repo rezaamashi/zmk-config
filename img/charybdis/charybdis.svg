@@ -363,6 +363,10 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="154" y="79" width="28" height="26" class="combo"/>
 <text x="168" y="92" class="combo tap">Navword</text>
 </g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="490" y="23" width="28" height="26" class="combo"/>
+<text x="504" y="36" class="combo tap">-</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 339)" class="layer-Qwe">
@@ -548,6 +552,10 @@ path.combo { stroke: #7f7f7f; }
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="154" y="79" width="28" height="26" class="combo"/>
 <text x="168" y="92" class="combo tap">Navword</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="490" y="23" width="28" height="26" class="combo"/>
+<text x="504" y="36" class="combo tap">-</text>
 </g>
 </g>
 </g>
