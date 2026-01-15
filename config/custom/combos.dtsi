@@ -18,9 +18,9 @@
     #define COMBO_IDLE 50
 #endif
 
+// Special functions
 ZMK_COMBO(colon_w,           &mcr_colon_w,  LT3 LT2, DHM QWE,              COMBO_TERM, COMBO_IDLE)
 ZMK_COMBO(esc,               &kp ESC,       RM1 RM2, DHM QWE,              COMBO_TERM, COMBO_IDLE)
-
 ZMK_COMBO(ctrl_g,            &kp LC(G),     RB1 RB2, DHM QWE,              COMBO_TERM, COMBO_IDLE)
 
 ZMK_COMBO(tog_qwerty,        &tog QWE,      LB4 LB3, DHM QWE,              COMBO_TERM, COMBO_IDLE)
@@ -30,5 +30,7 @@ ZMK_COMBO(mse,               &tog MSE,      LT2 LT1, DHM QWE NAV NUM,      COMBO
 ZMK_COMBO(esc_mse,           &tog MSE,      RM1 RM2, MSE,                      COMBO_TERM, COMBO_IDLE)
 
 ZMK_COMBO(nav_word,          &nav_word NAV, LM2 LM1, DHM QWE,              COMBO_TERM, COMBO_IDLE)
-
 ZMK_COMBO(esc_auto_layer,    CANCEL,        RM1 RM2, NAV NUM SYM,              COMBO_TERM, COMBO_IDLE)
+
+// Characters
+ZMK_COMBO(minus_combo,    &kp MINUS,        RT1 RT2, DHM QWE,              COMBO_TERM, COMBO_IDLE)
