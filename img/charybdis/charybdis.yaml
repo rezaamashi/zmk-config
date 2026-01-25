@@ -236,7 +236,7 @@ layers:
   - BT NXT
   - BT PRV
   - OUT TOG
-  - '&msc MOVE_LEFT Scroll Left'
+  - Scroll ←
   - Scroll ↓
   - Scroll ↑
   - Scroll →
