@@ -298,16 +298,16 @@ ZMK_HOLD_TAP(ht_end, bindings = <&masked_end>, <&kp>; MT_CORE)
 // -----------------------------------------------------------------------------------------
 
 #if HOST_OS == MACOS
-    #define COPY &kp LG(C)
+    #define RZ_COPY &kp LG(C)
     #define CUTMOVE &kp LG(LA(V))
     #define PASTE &kp LG(V)
-    #define UNDO &kp LG(Z)
+    #define RZ_UNDO &kp LG(Z)
     #define REDO &kp LG(LS(Z))
 #else
-    #define COPY &kp LC(C)
+    #define RZ_COPY &kp LC(C)
     #define CUTMOVE &kp LC(X)
     #define PASTE &kp LC(V)
-    #define UNDO &kp LC(Z)
+    #define RZ_UNDO &kp LC(Z)
     #define REDO &kp LC(Y)
 #endif
 
@@ -383,11 +383,11 @@ ZMK_BASE_LAYER(Sym,
 
 ZMK_BASE_LAYER(Nav,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-  	 SWAPQUIT     &kp LS(TAB)    &swapper        PASTE          ___     ,       ___        NAV_PG_DN     NAV_PG_UP       COPY        &kp SYSREQ ,
+  	 SWAPQUIT     &kp LS(TAB)    &swapper        PASTE          ___     ,       ___        NAV_PG_DN     NAV_PG_UP      RZ_COPY      &kp SYSREQ ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
   	 &sk HML_3     &sk HML_2     &sk HML_1     &sk HML_0     &kp SLCK   ,     NAV_LEFT      &kp DOWN      &kp UP       NAV_RIGHT     &kp CAPS   ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-  	 &kp PSCRN       UNDO          REDO         CUTMOVE         ___     ,     &kp TAB       NAV_BSPC      NAV_DEL     &key_repeat     &kp INS   ,
+  	 &kp PSCRN      RZ_UNDO        REDO         CUTMOVE         ___     ,     &kp TAB       NAV_BSPC      NAV_DEL     &key_repeat     &kp INS   ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                                   ___           ___     ,    &kp K_APP    MAGIC_SHIFT
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
