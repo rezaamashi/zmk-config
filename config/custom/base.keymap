@@ -28,6 +28,10 @@
 #endif
 
 #ifdef CONFIG_MOUSE_EMULATION
+    #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+    // this not used when CONFIG_SMOOTH_SCROLLING enabled
+    // #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+
     #include <dt-bindings/zmk/pointing.h>
         #define MLCLK &mkp LCLK // Left Click
         #define MRCLK &mkp RCLK // Right Click
