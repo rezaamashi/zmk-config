@@ -24,7 +24,6 @@ ZMK_COMBO(esc,               &kp ESC,       RM1 RM2, DHM QWE,              COMBO
 ZMK_COMBO(ctrl_g,            &kp LC(G),     RB1 RB2, DHM QWE,              COMBO_TERM, COMBO_IDLE)
 
 ZMK_COMBO(tog_qwerty,        &tog QWE,      LB4 LB3, DHM QWE,              COMBO_TERM, COMBO_IDLE)
-ZMK_COMBO(tog_steno,         &tog STE,      RB3 RB4, DHM QWE,              COMBO_TERM, COMBO_IDLE)
 
 //ZMK_COMBO(mse,               &smart_mouse,  LT2 LT1, DHM QWE NAV NUM,      COMBO_TERM, COMBO_IDLE)
 ZMK_COMBO(mse,               &tog MSE,      LT2 LT1, DHM QWE NAV NUM,      COMBO_TERM, COMBO_IDLE)
