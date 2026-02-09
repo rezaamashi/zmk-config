@@ -70,6 +70,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: Med}
   - {t: Numword, h: Sym, s: Sticky Num}
   - {t: Magic, h: Shift}
+  Ste: ['#', '#', '#', '#', '#', '#', '#', '#', '#', '#', S, T, P, H, '*', F, P, L, T, D, S, K, W, R, '*', R, B, G, S, Z, A, O, E, U]
   Num:
   - '['
   - '7'
@@ -257,6 +258,9 @@ combos:
   l: [Dhm, Qwe]
 - p: [20, 21]
   k: {t: Qwe, h: toggle}
+  l: [Dhm, Qwe]
+- p: [28, 29]
+  k: {t: Ste, h: toggle}
   l: [Dhm, Qwe]
 - p: [2, 3]
   k: {t: Mse, h: toggle}
