@@ -351,13 +351,20 @@ ZMK_BASE_LAYER(Qwe,
 )
 
 ZMK_BASE_LAYER(Ste,
+// Layer simulate stenography, further customized in plover machine setting for the duplicate keys
+// In this case the duplicate keys are -T, -P, -S, and -R that are being represented by number 1-4
+// Also since plover doesn't have HASH and STAR, I decided to use number 9 and 0 respectively
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-	&kp HASH        &kp HASH     &kp HASH       &kp HASH      &kp HASH  ,    &kp HASH      &kp HASH      &kp HASH      &kp HASH      &kp HASH   ,
+//|     #       |      #      |      #      |      #      |      #      | |      #      |      #      |      #      |      #      |      #      |
+	  &kp N9        &kp N9        &kp N9        &kp N9        &kp N9    ,     &kp N9        &kp N9        &kp N9        &kp N9        &kp N9    ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp S           &kp T        &kp P          &kp H         &kp STAR  ,      &kp F         &kp P        &kp L          &kp T        &kp D     ,
+//|     #       |     T-      |     P-      |     H-      |      *      | |     -F      |     -P      |     -L      |     -T      |     -D      |
+      &kp N9        &kp T         &kp P          &kp H        &kp N0    ,      &kp F         &kp N2        &kp L         &kp N1       &kp D     ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-	&kp S           &kp K        &kp W          &kp R         &kp STAR  ,      &kp R         &kp B        &kp G          &kp S        &kp Z     ,
+//|     S-      |     K-      |     W-      |     R-      |      *      | |     -R      |     -B      |     -G      |     -S      |     -Z      |
+	 &kp S          &kp K         &kp W          &kp R        &kp N0    ,      &kp N4        &kp B        &kp G          &kp N3       &kp Z     ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
+//                                          |     A-      |     O-      | |     -E      |     -U      |
 	                                            &kp A         &kp O     ,      &kp E         &kp U
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 )
