@@ -44,6 +44,14 @@ parse_config:
     "&mkp MB4": $$mdi:page-previous-outline$$
     "&mkp MB5": $$mdi:page-next-outline$$
 
+    # Steno workaround
+    "ST_HASH": { "t": "#", "h": "9"}
+    "ST_STAR": { "t": "*", "h": "0"}
+    "ST_R_T": { "t": "T", "h": "1"}
+    "ST_R_P": { "t": "P", "h": "2"}
+    "ST_R_S": { "t": "S", "h": "3"}
+    "ST_R_R": { "t": "R", "h": "4"}
+
   trans_legend: { "t": "", "type": "trans" }
   none_legend: { "t": $$mdi:alpha-x-circle-outline$$ , "type": "none" }
 
