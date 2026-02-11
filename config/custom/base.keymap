@@ -299,6 +299,20 @@ ZMK_HOLD_TAP(ht_end, bindings = <&masked_end>, <&kp>; MT_CORE)
 #endif
 
 // -----------------------------------------------------------------------------------------
+// Stenography Workarounds
+// -----------------------------------------------------------------------------------------
+
+// For explanation check the "Ste" layer below..
+#define ST_HASH &kp N9
+#define _ST_HASH_TOP_ \
+     ST_HASH ST_HASH ST_HASH ST_HASH ST_HASH, ST_HASH ST_HASH ST_HASH ST_HASH ST_HASH
+#define ST_STAR &kp N0
+#define ST_R_T &kp N1
+#define ST_R_P &kp N2
+#define ST_R_S &kp N3
+#define ST_R_R &kp N4
+
+// -----------------------------------------------------------------------------------------
 // Keymap
 // -----------------------------------------------------------------------------------------
 
@@ -337,18 +351,27 @@ ZMK_BASE_LAYER(Qwe,
 )
 
 ZMK_BASE_LAYER(Ste,
+// Make sure that you have this customized in `~/.config/plover/plover.cfg` to prevent plover remapping QWERTY
+// [System: Lapwing] # or any other system, eg. "English Stenotype"
+// keymap[keyboard] = [["#", ["9"]], ["S-", ["s"]], ["T-", ["t"]], ["K-",
+// ["k"]], ["P-", ["p"]], ["W-", ["w"]], ["H-", ["h"]], ["R-", ["r"]], ["A-",
+// ["a"]], ["O-", ["o"]], ["*", ["0"]], ["-E", ["e"]], ["-U", ["u"]], ["-F",
+// ["f"]], ["-R", ["4"]], ["-P", ["2"]], ["-B", ["b"]], ["-L", ["l"]], ["-G",
+// ["g"]], ["-T", ["1"]], ["-S", ["3"]], ["-D", ["d"]], ["-Z", ["z"]],
+// ["arpeggiate", ["space"]], ["no-op", ["\\", "]", "x", ",", ".", "/"]]]
+//
 // Layer simulate stenography, further customized in plover machine setting for the duplicate keys
 // In this case the duplicate keys are -T, -P, -S, and -R that are being represented by number 1-4
 // Also since plover doesn't have HASH and STAR, I decided to use number 9 and 0 respectively
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 //|     #       |      #      |      #      |      #      |      #      | |      #      |      #      |      #      |      #      |      #      |
-	  &kp N9        &kp N9        &kp N9        &kp N9        &kp N9    ,     &kp N9        &kp N9        &kp N9        &kp N9        &kp N9    ,
+                                                                    _ST_HASH_TOP_                                                               ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //|     #       |     T-      |     P-      |     H-      |      *      | |     -F      |     -P      |     -L      |     -T      |     -D      |
-      &kp N9        &kp T         &kp P          &kp H        &kp N0    ,      &kp F         &kp N2        &kp L         &kp N1       &kp D     ,
+      ST_HASH       &kp T         &kp P          &kp H        ST_STAR   ,      &kp F        ST_R_P        &kp L         ST_R_T        &kp D     ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //|     S-      |     K-      |     W-      |     R-      |      *      | |     -R      |     -B      |     -G      |     -S      |     -Z      |
-	 &kp S          &kp K         &kp W          &kp R        &kp N0    ,      &kp N4        &kp B        &kp G          &kp N3       &kp Z     ,
+	  &kp S         &kp K         &kp W          &kp R        ST_STAR   ,     ST_R_R         &kp B        &kp G         ST_R_S        &kp Z     ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
 //                                          |     A-      |     O-      | |     -E      |     -U      |
 	                                            &kp A         &kp O     ,      &kp E         &kp U
