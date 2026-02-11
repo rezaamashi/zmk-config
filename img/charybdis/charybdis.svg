@@ -369,10 +369,10 @@ path.combo { stroke: #7f7f7f; }
 </a><text x="56" y="187" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
-<rect rx="6" ry="6" x="602" y="163" width="28" height="26" class="combo"/>
+<rect rx="6" ry="6" x="238" y="123" width="28" height="26" class="combo"/>
 <a href="#Ste">
-<text x="616" y="176" class="combo tap layer-activator">Ste</text>
-</a><text x="616" y="187" class="combo hold">toggle</text>
+<text x="252" y="136" class="combo tap layer-activator">Ste</text>
+</a><text x="252" y="147" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="154" y="23" width="28" height="26" class="combo"/>
@@ -565,10 +565,10 @@ path.combo { stroke: #7f7f7f; }
 </a><text x="56" y="187" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
-<rect rx="6" ry="6" x="602" y="163" width="28" height="26" class="combo"/>
+<rect rx="6" ry="6" x="238" y="123" width="28" height="26" class="combo"/>
 <a href="#Ste">
-<text x="616" y="176" class="combo tap layer-activator">Ste</text>
-</a><text x="616" y="187" class="combo hold">toggle</text>
+<text x="252" y="136" class="combo tap layer-activator">Ste</text>
+</a><text x="252" y="147" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="154" y="23" width="28" height="26" class="combo"/>
@@ -724,6 +724,12 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(451, 221) rotate(-15.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">U</text>
+</g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="238" y="123" width="28" height="26" class="combo"/>
+<a href="#Ste">
+<text x="252" y="136" class="combo tap layer-activator">Ste</text>
+</a><text x="252" y="147" class="combo hold">toggle</text>
 </g>
 </g>
 </g>

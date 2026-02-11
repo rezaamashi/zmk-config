@@ -259,9 +259,9 @@ combos:
 - p: [20, 21]
   k: {t: Qwe, h: toggle}
   l: [Dhm, Qwe]
-- p: [28, 29]
+- p: [14, 24]
   k: {t: Ste, h: toggle}
-  l: [Dhm, Qwe]
+  l: [Dhm, Qwe, Ste]
 - p: [2, 3]
   k: {t: Mse, h: toggle}
   l: [Dhm, Qwe, Nav, Num]
