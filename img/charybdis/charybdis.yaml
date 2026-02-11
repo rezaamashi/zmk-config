@@ -297,8 +297,8 @@ combos:
   k: {t: Ste, h: toggle}
   l: [Dhm, Qwe, Ste]
 - p: [2, 3]
-  k: SmartMouse
-  l: [Dhm, Qwe, Nav, Num]
+  k: {t: Mse, h: toggle}
+  l: [Dhm, Qwe, Nav, Num, Mse]
 - p: [16, 17]
   k: {t: Mse, h: toggle}
   l: [Mse]
