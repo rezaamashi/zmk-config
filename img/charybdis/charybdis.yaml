@@ -70,12 +70,46 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: Med}
   - {t: Numword, h: Sym, s: Sticky Num}
   - {t: Magic, h: Shift}
-  Ste: ['9', '9', '9', '9', '9', '9', '9', '9', '9', '9', '9', T, P, H, '0', F, '2', L, '1', D, S, K, W, R, '0', '4', B, G, '3', Z, A, O, E, U]
+  Ste:
+  - {t: '#', h: '9'}
+  - {t: '#', h: '9'}
+  - {t: '#', h: '9'}
+  - {t: '#', h: '9'}
+  - {t: '#', h: '9'}
+  - {t: '#', h: '9'}
+  - {t: '#', h: '9'}
+  - {t: '#', h: '9'}
+  - {t: '#', h: '9'}
+  - {t: '#', h: '9'}
+  - {t: '#', h: '9'}
+  - T
+  - P
+  - H
+  - {t: '*', h: '0'}
+  - F
+  - {t: P, h: '2'}
+  - L
+  - {t: T, h: '1'}
+  - D
+  - S
+  - K
+  - W
+  - R
+  - {t: '*', h: '0'}
+  - {t: R, h: '4'}
+  - B
+  - G
+  - {t: S, h: '3'}
+  - Z
+  - A
+  - O
+  - E
+  - U
   Num:
   - '['
   - '7'
   - '8'
-  - '9'
+  - {t: '#', h: '9'}
   - ']'
   - {t: Qwe, h: toggle}
   - BT 1
@@ -83,7 +117,7 @@ layers:
   - BT 3
   - {type: trans}
   - {t: '''', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: R, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '5', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '6', h: '$$mdi:apple-keyboard-command$$'}
   - '='
@@ -93,10 +127,10 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - '`'
-  - '1'
-  - '2'
-  - '3'
-  - '0'
+  - {t: T, h: '1'}
+  - {t: P, h: '2'}
+  - {t: S, h: '3'}
+  - {t: '*', h: '0'}
   - \
   - {t: '$$mdi:backspace-outline$$', h: 'Alt+$$mdi:backspace-outline$$'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: 'Alt+$$mdi:backspace-reverse-outline$$'}
@@ -263,7 +297,7 @@ combos:
   k: {t: Ste, h: toggle}
   l: [Dhm, Qwe, Ste]
 - p: [2, 3]
-  k: '&smart_mouse'
+  k: SmartMouse
   l: [Dhm, Qwe, Nav, Num]
 - p: [16, 17]
   k: {t: Mse, h: toggle}
