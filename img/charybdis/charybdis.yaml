@@ -263,7 +263,7 @@ combos:
   k: {t: Ste, h: toggle}
   l: [Dhm, Qwe, Ste]
 - p: [2, 3]
-  k: {t: Mse, h: toggle}
+  k: '&smart_mouse'
   l: [Dhm, Qwe, Nav, Num]
 - p: [16, 17]
   k: {t: Mse, h: toggle}
