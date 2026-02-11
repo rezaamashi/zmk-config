@@ -11,6 +11,7 @@ parse_config:
     "&studio_unlock": Studio Unlock
     "&caps_word": Caps Word
     "&nav_word": Navword
+    "&smart_mouse": "SmartMouse"
     "&key_repeat": Repeat
 
     "&bt BT_SEL 0": BT 1
