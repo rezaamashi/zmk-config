@@ -4,27 +4,15 @@
 #ifdef CONFIG_WIRELESS
     #include <dt-bindings/zmk/bt.h>
     #include <dt-bindings/zmk/outputs.h>
-       #define BT_0 &bt BT_SEL 0
-       #define BT_1 &bt BT_SEL 1
-       #define BT_2 &bt BT_SEL 2
-       #define BT_3 &bt BT_SEL 3
-       #define BT_4 &bt BT_SEL 4
-       #define BT_NXT_ &bt BT_NXT
-       #define BT_PRV_ &bt BT_PRV
-       #define BT_CLR_ &bt BT_CLR
-       #define BT_CLA_ &bt BT_CLR_ALL
-       #define BT_TOG_ &out OUT_TOG
+       #define _BT_SEL_KEYS_
+         &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_SEL 4
+       #define _BT_CONF_KEYS_
+         &bt BT_CLR_ALL &bt BT_CLR &bt BT_PRV &bt BT_NXT  &out OUT_TOG
 #else
-       #define BT_0 &trans
-       #define BT_1 &trans
-       #define BT_2 &trans
-       #define BT_3 &trans
-       #define BT_4 &trans
-       #define BT_NXT_ &trans
-       #define BT_PRV_ &trans
-       #define BT_CLR_ &trans
-       #define BT_CLA_ &trans
-       #define BT_TOG_ &trans
+       #define _BT_SEL_KEYS_
+         &trans &trans &trans &trans &trans
+       #define _BT_CONF_KEYS_
+         &trans &trans &trans &trans &trans
 #endif
 
 #ifdef CONFIG_MOUSE_EMULATION
@@ -428,9 +416,9 @@ ZMK_BASE_LAYER(Mse,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
   	    ___           ___           ___           ___           ___     ,       MBCK       NAV_PG_DN     NAV_PG_UP        MFWD          ___     ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-   &bt BT_SEL 3   &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0 &bt BT_SEL 4 ,       MSLE          MSDN          MSUP          MSRI         MDCLK    ,
+                               _BT_SEL_KEYS_                            ,       MSLE          MSDN          MSUP          MSRI         MDCLK    ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      BT_CLA_       BT_CLR_       BT_NXT_       BT_PRV_       BT_TOG_   ,      MSCLE         MSCDN         MSCUP         MSCRI          ___     ,
+                               _BT_CONF_KEYS_                           ,      MSCLE         MSCDN         MSCUP         MSCRI          ___     ,
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                                   ___           ___     ,      MRCLK         MLCLK
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
