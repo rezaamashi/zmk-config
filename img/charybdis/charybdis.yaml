@@ -231,19 +231,19 @@ layers:
   - Mouse ↓
   - Mouse ↑
   - Mouse →
-  - {type: trans}
+  - $$phosphor:regular/mouse-middle-click$$
   - BT CLR ALL
   - BT CLR
-  - BT NXT
   - BT PRV
+  - BT NXT
   - OUT TOG
   - Scroll ←
   - Scroll ↓
   - Scroll ↑
   - Scroll →
   - {type: trans}
-  - {t: Mse, h: toggle}
-  - $$phosphor:regular/mouse-middle-click$$
+  - {type: trans}
+  - {type: trans}
   - $$phosphor:regular/mouse-right-click$$
   - $$phosphor:regular/mouse-left-click$$
 combos:
