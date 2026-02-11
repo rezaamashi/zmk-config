@@ -304,8 +304,10 @@ ZMK_HOLD_TAP(ht_end, bindings = <&masked_end>, <&kp>; MT_CORE)
 
 // For explanation check the "Ste" layer below..
 #define ST_HASH &kp N9
-#define _ST_HASH_TOP_ \
-     ST_HASH ST_HASH ST_HASH ST_HASH ST_HASH, ST_HASH ST_HASH ST_HASH ST_HASH ST_HASH
+#define _ST_HASH_TOP_LEFT_ \
+     ST_HASH ST_HASH ST_HASH ST_HASH ST_HASH
+#define _ST_HASH_TOP_RIGHT_ \
+     ST_HASH ST_HASH ST_HASH ST_HASH ST_HASH
 #define ST_STAR &kp N0
 #define ST_R_T &kp N1
 #define ST_R_P &kp N2
@@ -365,7 +367,7 @@ ZMK_BASE_LAYER(Ste,
 // Also since plover doesn't have HASH and STAR, I decided to use number 9 and 0 respectively
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
 //|     #       |      #      |      #      |      #      |      #      | |      #      |      #      |      #      |      #      |      #      |
-                                                                    _ST_HASH_TOP_                                                               ,
+                            _ST_HASH_TOP_LEFT_                          ,                           _ST_HASH_TOP_RIGHT_                         ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
 //|     #       |     T-      |     P-      |     H-      |      *      | |     -F      |     -P      |     -L      |     -T      |     -D      |
       ST_HASH       &kp T         &kp P          &kp H        ST_STAR   ,      &kp F        ST_R_P        &kp L         ST_R_T        &kp D     ,
