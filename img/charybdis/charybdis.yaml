@@ -246,21 +246,21 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:play-pause$$
   Mse:
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - $$mdi:page-previous-outline$$
-  - {t: PgDn, h: Gui+↓}
-  - {t: PgUp, h: Gui+↑}
-  - $$mdi:page-next-outline$$
-  - {type: trans}
   - BT 4
   - BT 3
   - BT 2
   - BT 1
   - BT 5
+  - $$mdi:page-previous-outline$$
+  - {t: PgDn, h: Gui+↓}
+  - {t: PgUp, h: Gui+↑}
+  - $$mdi:page-next-outline$$
+  - {type: trans}
+  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-option$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-command$$', h: sticky}
+  - {type: trans}
   - Mouse ←
   - Mouse ↓
   - Mouse ↑
