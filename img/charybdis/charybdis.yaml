@@ -276,8 +276,8 @@ layers:
   - Scroll ↑
   - Scroll →
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {t: SPC, h: Nav, s: Sentence}
+  - {t: '$$mdi:keyboard-return$$', h: Med}
   - $$phosphor:regular/mouse-right-click$$
   - $$phosphor:regular/mouse-left-click$$
 combos:
