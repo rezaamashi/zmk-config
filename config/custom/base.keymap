@@ -187,7 +187,7 @@ ZMK_HOLD_TAP(smart_num, bindings = <&mo>, <&num_dance>; flavor = "balanced";
 ZMK_TAP_DANCE(num_dance, bindings = <&num_word NUM>, <&sl NUM>;
               tapping-term-ms = <200>;)
 ZMK_AUTO_LAYER(num_word,
-    continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL LPAR RPAR LBKT RBKT LBRC LBRC DOT COMMA PIPE>;
+    continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL LPAR RPAR LBKT RBKT LBRC LBRC DOT COMMA PIPE UP DOWN RIGHT LEFT>;
     ignore-modifiers;
     ignore-numbers;
 )
