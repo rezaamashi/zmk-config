@@ -3,10 +3,10 @@ id: charybdis
 name: charybdis
 type: shield
 url: https://github.com/rezaamashi/zmk-config
-requires: [nrfmicro_13]
+requires: [nice_nano_v2, nrfmicro_13]
 features:
-  - keys
-  - zmk studio
+    - keys
+    - zmk studio
 siblings:
-   - charybdis_left
-   - charybdis_right
+    - charybdis_left
+    - charybdis_right
